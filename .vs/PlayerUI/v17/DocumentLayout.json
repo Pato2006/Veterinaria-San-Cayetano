@@ -1,22 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\",
+  "WorkspaceRootPath": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|c:\\users\\a-25\\desktop\\veterinaria san cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|c:\\users\\a-25\\desktop\\veterinaria san cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|c:\\users\\a-25\\desktop\\veterinaria san cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|d:\\colegio\\escuela\\vete\\veterinaria-san-cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|d:\\colegio\\escuela\\vete\\veterinaria-san-cayetano\\playerui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form1.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form1.cs",
-              "ToolTip": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form1.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
               "RelativeToolTip": "PlayerUI\\Form1.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAUwNkAAAAAAAAA",
+              "ViewState": "AQIAANEAAAAAAAAAAAAAAN4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T19:53:17.902Z",
               "IsPinned": true,
@@ -44,24 +48,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
+              "Title": "Form1.designer.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.designer.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form1.designer.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.designer.cs",
+              "RelativeToolTip": "PlayerUI\\Form1.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T13:48:43.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form2.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form2.cs",
-              "ToolTip": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form2.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
               "RelativeToolTip": "PlayerUI\\Form2.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T11:45:44.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form2.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form2.cs",
-              "ToolTip": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form2.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs [Dise\u00F1o]",
               "RelativeToolTip": "PlayerUI\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T11:44:22.94Z",
@@ -69,11 +86,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form1.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form1.cs",
-              "ToolTip": "C:\\Users\\A-25\\Desktop\\Veterinaria San Cayetano\\PlayerUI\\Form1.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs [Dise\u00F1o]",
               "RelativeToolTip": "PlayerUI\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-28T19:53:08.665Z",

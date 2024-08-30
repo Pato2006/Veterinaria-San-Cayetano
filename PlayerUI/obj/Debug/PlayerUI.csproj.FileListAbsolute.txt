@@ -36,3 +36,15 @@ C:\Users\A-25\Desktop\Veterinaria San Cayetano\PlayerUI\obj\Debug\PlayerUI.Form3
 C:\Users\A-25\Desktop\Veterinaria San Cayetano\PlayerUI\obj\Debug\PlayerUI.Properties.Resources.resources
 C:\Users\A-25\Desktop\Veterinaria San Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.GenerateResource.cache
 C:\Users\A-25\Desktop\Veterinaria San Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe.config
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.pdb
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.AssemblyReference.cache
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form1.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form3.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Properties.Resources.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.GenerateResource.cache
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.exe
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb
