@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form2 : Form
+    public partial class Form2_Ejemplo : Form
     {
-        public Form2()
+        public Form2_Ejemplo()
         {
             InitializeComponent();
         }
@@ -39,11 +39,9 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Historias_Detalles());
-            //fojarse en Form1.cs que ahi esta la guarangada
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void label4_Click(object sender, EventArgs e)
         {
 
         }
@@ -53,5 +51,4 @@ namespace PlayerUI
 
         }
     }
-
 }

@@ -53,6 +53,30 @@
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2_Historias_Detalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Historias_Detalles.designer.cs">
+      <DependentUpon>Form2_Historias_Detalles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_Historias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Historias.designer.cs">
+      <DependentUpon>Form2_Historias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Productos.designer.cs">
+      <DependentUpon>Form2_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2_Ejemplo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Ejemplo.designer.cs">
+      <DependentUpon>Form2_Ejemplo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +93,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Historias_Detalles.resx">
+      <DependentUpon>Form2_Historias_Detalles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Historias.resx">
+      <DependentUpon>Form2_Historias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Productos.resx">
+      <DependentUpon>Form2_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Ejemplo.resx">
+      <DependentUpon>Form2_Ejemplo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>

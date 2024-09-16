@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form2
+    partial class Form2_Historias
     {
         /// <summary>
         /// Required designer variable.
@@ -48,9 +48,10 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
             this.label1.Location = new System.Drawing.Point(299, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 25);
+            this.label1.Size = new System.Drawing.Size(120, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TURNOS";
+            this.label1.Text = "HISTORIAS";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
@@ -112,15 +113,14 @@
             // 
             this.button1.AccessibleDescription = "";
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(401, 21);
+            this.button1.Location = new System.Drawing.Point(425, 21);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 26);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Añadir nuevo turno";
+            this.button1.Size = new System.Drawing.Size(161, 26);
+            this.button1.TabIndex = 18;
+            this.button1.Text = "Añadir nueva historia clinica";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // Form2
+            // Form2_Historias
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "Form2_Historias";
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

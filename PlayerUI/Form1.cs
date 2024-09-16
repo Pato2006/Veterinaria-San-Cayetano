@@ -53,6 +53,7 @@ namespace PlayerUI
 
         private void button3_Click(object sender, EventArgs e)
         {
+            openChildForm(new Form2_Historias());
             //..
             //your codes
             //..
@@ -220,7 +221,17 @@ namespace PlayerUI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            openChildForm(new Form2_Productos());
+        }
 
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new Form2_Productos());
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new Form2_Productos());
         }
     }
 }
