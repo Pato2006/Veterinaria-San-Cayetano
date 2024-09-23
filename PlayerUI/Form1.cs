@@ -79,7 +79,7 @@ namespace PlayerUI
 
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos_Lista());
+            openChildForm(new Form2_Productos_Lista(this));
             showSubMenu(panelPlaylistSubMenu);
         }
 
@@ -157,7 +157,7 @@ namespace PlayerUI
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            openChildForm(new Form3(this));
             //..
             //your codes
             //..
@@ -232,7 +232,7 @@ namespace PlayerUI
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos());
+            openChildForm(new Form2_Productos(this));
         }
     }
 }

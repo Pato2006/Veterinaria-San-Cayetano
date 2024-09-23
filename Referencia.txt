@@ -1,0 +1,9 @@
+private Form1 padre;
+
+        public Form2(Form1 padre)
+        {
+            InitializeComponent();
+            padre = Form_;
+        }
+
+Form_.openChildForm(new Form2_Historias());

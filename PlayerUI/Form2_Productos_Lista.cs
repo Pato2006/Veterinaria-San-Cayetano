@@ -12,9 +12,13 @@ namespace PlayerUI
 {
     public partial class Form2_Productos_Lista : Form
     {
-        public Form2_Productos_Lista()
+
+        private Form1 padre;
+
+        public Form2_Productos_Lista(Form1 Form_)
         {
             InitializeComponent();
+            padre = Form_;
         }
 
         private void button5_Click(object sender, EventArgs e)
