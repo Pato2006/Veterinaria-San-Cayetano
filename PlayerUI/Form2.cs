@@ -60,10 +60,6 @@ namespace PlayerUI
         private void button1_Click(object sender, EventArgs e)
         {
             openChildForm(new Form2_Ejemplo());
-            button1.Hide();
-            label1.Hide();
-            textBox1.Hide();
-            dataGridView1.Hide();
         }
 
         // Métodos restantes

@@ -79,6 +79,7 @@ namespace PlayerUI
 
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
+            openChildForm(new Form2_Productos_Lista());
             showSubMenu(panelPlaylistSubMenu);
         }
 

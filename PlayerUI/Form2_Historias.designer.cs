@@ -120,6 +120,7 @@
             this.Buscar.TabIndex = 25;
             this.Buscar.Text = "Buscar\r\n";
             this.Buscar.UseVisualStyleBackColor = true;
+            this.Buscar.Click += new System.EventHandler(this.Buscar_Click);
             // 
             // Form2_Historias
             // 
