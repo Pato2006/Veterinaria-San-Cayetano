@@ -12,6 +12,8 @@ namespace PlayerUI
 {
     public partial class Form2_Historias_Detalles : Form
     {
+        private Form activeForm = null;
+        private Panel panelChildForm;
         public Form2_Historias_Detalles()
         {
             InitializeComponent();
@@ -48,6 +50,11 @@ namespace PlayerUI
         }
 
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+
+        }
+
+        private void Form2_Historias_Detalles_Load(object sender, EventArgs e)
         {
 
         }

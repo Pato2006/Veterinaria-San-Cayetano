@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form2_Ejemplo : Form
+    public partial class Form2_Productos_Lista : Form
     {
-        public Form2_Ejemplo()
+        public Form2_Productos_Lista()
         {
             InitializeComponent();
         }
@@ -39,9 +39,10 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //fojarse en Form1.cs que ahi esta la guarangada
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -56,4 +57,5 @@ namespace PlayerUI
 
         }
     }
+
 }

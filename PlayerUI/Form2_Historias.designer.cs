@@ -34,8 +34,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.Buscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Buscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -97,28 +97,29 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // Buscar
-            // 
-            this.Buscar.AccessibleDescription = "";
-            this.Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Buscar.Location = new System.Drawing.Point(592, 56);
-            this.Buscar.Name = "Buscar";
-            this.Buscar.Size = new System.Drawing.Size(66, 26);
-            this.Buscar.TabIndex = 9;
-            this.Buscar.Text = "Buscar\r\n";
-            this.Buscar.UseVisualStyleBackColor = true;
-            this.Buscar.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button1
             // 
             this.button1.AccessibleDescription = "";
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(425, 21);
+            this.button1.Location = new System.Drawing.Point(499, 24);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 26);
-            this.button1.TabIndex = 18;
+            this.button1.Size = new System.Drawing.Size(159, 26);
+            this.button1.TabIndex = 24;
             this.button1.Text = "Añadir nueva historia clinica";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // Buscar
+            // 
+            this.Buscar.AccessibleDescription = "";
+            this.Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Buscar.Location = new System.Drawing.Point(592, 57);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(66, 26);
+            this.Buscar.TabIndex = 25;
+            this.Buscar.Text = "Buscar\r\n";
+            this.Buscar.UseVisualStyleBackColor = true;
             // 
             // Form2_Historias
             // 
@@ -126,8 +127,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(193)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(684, 431);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
@@ -148,7 +149,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Buscar;
     }
 }
