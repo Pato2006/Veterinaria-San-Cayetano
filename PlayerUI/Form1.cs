@@ -157,7 +157,9 @@ namespace PlayerUI
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3(this));
+            openChildForm(new Form3(//this
+                     //
+                         ));
             //..
             //your codes
             //..
@@ -232,7 +234,8 @@ namespace PlayerUI
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos(this));
+            openChildForm(new Form2_Productos(//this
+                                              ));
         }
     }
 }
