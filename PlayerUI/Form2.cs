@@ -17,6 +17,7 @@ namespace PlayerUI
             InitializeChildFormPanel();
             hideSubMenu();
             ObtenerTurnos();
+
         }
         private void hideSubMenu()
         {
@@ -62,7 +63,31 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Ejemplo());
+            //openChildForm(new Form2_Ejemplo());
+            string textoGuardado;
+
+            // Guarda el contenido del TextBox en la variable
+            textoGuardado = textBox1.Text;
+            MessageBox.Show("Texto guardado: " + textoGuardado);
+
+            // Elimina columnas anteriores (si existen)
+            dataGridView1.Columns.Clear();
+
+            // Crea una nueva columna de botones
+            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
+            buttonColumn.HeaderText = "Acciones"; // Título de la columna
+            buttonColumn.Text = "Presiona"; // Texto del botón
+            buttonColumn.UseColumnTextForButtonValue = true; // Para mostrar el texto en todas las filas
+
+            // Agrega la columna al DataGridView
+            dataGridView1.Columns.Add(buttonColumn);
+
+            // Agrega algunas filas de ejemplo (opcional)
+            for (int i = 1; i < 5; i++)
+            {
+                dataGridView1.Rows.Add();
+            }
+
         }
 
         // Métodos restantes
@@ -74,16 +99,24 @@ namespace PlayerUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                // Acción al presionar el botón
+                MessageBox.Show($"Botón presionado en la fila {e.RowIndex + 1}");
+            }
 
         }
 
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Data Source=DESKTOP-3CPGI44\\SQLEXPRESS;Initial Catalog=Veterinaria;Integrated Security=True";
+            string connectionString = "Server=PC-F-06\\SQLEXPRESS;" +
+                "Database=Vete;" +
+                "Trusted_Connection=True;";
+
 
             // Consulta SQL para obtener los turnos
-            string query = "SELECT * FROM turnos";
+            string query = "SELECT Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha FROM Pacientes INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
 
             // Crear un DataTable para almacenar los resultados de la consulta
             DataTable turnosTable = new DataTable();
@@ -108,16 +141,46 @@ namespace PlayerUI
                     }
                 }
 
+                // Crea las columnas de texto (4 columnas)
+                DataGridViewTextBoxColumn idColumn = new DataGridViewTextBoxColumn();
+                idColumn.HeaderText = "Nombre";
+                dataGridView1.Columns.Add(idColumn);
+
+                DataGridViewTextBoxColumn pacienteColumn = new DataGridViewTextBoxColumn();
+                pacienteColumn.HeaderText = "Animal";
+                dataGridView1.Columns.Add(pacienteColumn);
+
+                DataGridViewTextBoxColumn fechaColumn = new DataGridViewTextBoxColumn();
+                fechaColumn.HeaderText = "Raza";
+                dataGridView1.Columns.Add(fechaColumn);
+
+                DataGridViewTextBoxColumn mascotaColumn = new DataGridViewTextBoxColumn();
+                mascotaColumn.HeaderText = "Fecha";
+                dataGridView1.Columns.Add(mascotaColumn);
+
+                DataGridViewTextBoxColumn HoraColumn = new DataGridViewTextBoxColumn();
+                HoraColumn.HeaderText = "Hora";
+                dataGridView1.Columns.Add(HoraColumn);
+
+
+                // Crea una nueva columna de botones
+                DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
+                buttonColumn.HeaderText = "Historia"; // Título de la columna
+                buttonColumn.Text = "Ver"; // Texto del botón
+                buttonColumn.UseColumnTextForButtonValue = true; // Para mostrar el texto en todas las filas
+                dataGridView1.Columns.Add(buttonColumn);
+
                 // Mostrar los datos obtenidos (puedes adaptar esto para tu DataGridView)
                 foreach (DataRow row in turnosTable.Rows)
                 {
-                    string idTurno = row["ID"].ToString();
-                    string nombreCliente = row["Paciente_id"].ToString();
-                    string fechaTurno = row["Horario"].ToString();
-                    string mascota = row["Fecha"].ToString();
+                    string Nombre = row["Nombre"].ToString();
+                    string Animal = row["Animal"].ToString();
+                    string Raza = row["Raza"].ToString();
+                    string Fecha = row["Fecha"].ToString();
+                    string Horario = row["Horario"].ToString();
 
-                    // Aquí solo estamos mostrando en un MessageBox, pero puedes llenar el DataGridView con estos datos
-                    MessageBox.Show($"Turno ID: {idTurno}, Cliente: {nombreCliente}, Fecha: {fechaTurno}, Mascota: {mascota}");
+                    // Agrega la fila con datos en las 4 columnas de texto y el botón
+                    dataGridView1.Rows.Add(Nombre, Animal, Raza, Fecha, Horario);
                 }
             }
             catch (Exception ex)
@@ -150,7 +213,7 @@ namespace PlayerUI
         private void Form2_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla 'veterinariaDataSet.Turnos' Puede moverla o quitarla según sea necesario.
-            this.turnosTableAdapter.Fill(this.veterinariaDataSet.Turnos);
+            
 
         }
     }

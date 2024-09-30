@@ -31,26 +31,22 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.turnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.veterinariaDataSet = new PlayerUI.VeterinariaDataSet();
             this.button5 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Buscar = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.veterinariaDataSet = new PlayerUI.VeterinariaDataSet();
-            this.turnosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.turnosTableAdapter = new PlayerUI.VeterinariaDataSetTableAdapters.TurnosTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pacienteidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.areaidDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.horarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veterinariaDataSet)).BeginInit();
+            this.veterinariaDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.turnosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.turnosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veterinariaDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veterinariaDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turnosBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -78,26 +74,15 @@
             this.textBox1.Text = "Esto es un buscador";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // dataGridView1
+            // turnosBindingSource
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.pacienteidDataGridViewTextBoxColumn,
-            this.areaidDataGridViewTextBoxColumn,
-            this.horarioDataGridViewTextBoxColumn,
-            this.fechaDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.turnosBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 88);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(619, 297);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.turnosBindingSource.DataMember = "Turnos";
+            this.turnosBindingSource.DataSource = this.veterinariaDataSet;
+            // 
+            // veterinariaDataSet
+            // 
+            this.veterinariaDataSet.DataSetName = "VeterinariaDataSet";
+            this.veterinariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button5
             // 
@@ -144,73 +129,32 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(95, 201);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 23;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(230, 201);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 24;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(373, 201);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 25;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // veterinariaDataSet
-            // 
-            this.veterinariaDataSet.DataSetName = "VeterinariaDataSet";
-            this.veterinariaDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // turnosBindingSource
-            // 
-            this.turnosBindingSource.DataMember = "Turnos";
-            this.turnosBindingSource.DataSource = this.veterinariaDataSet;
-            // 
             // turnosTableAdapter
             // 
             this.turnosTableAdapter.ClearBeforeFill = false;
             // 
-            // iDDataGridViewTextBoxColumn
+            // veterinariaDataSetBindingSource
             // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.veterinariaDataSetBindingSource.DataSource = this.veterinariaDataSet;
+            this.veterinariaDataSetBindingSource.Position = 0;
             // 
-            // pacienteidDataGridViewTextBoxColumn
+            // turnosBindingSource1
             // 
-            this.pacienteidDataGridViewTextBoxColumn.DataPropertyName = "Paciente_id";
-            this.pacienteidDataGridViewTextBoxColumn.HeaderText = "Paciente_id";
-            this.pacienteidDataGridViewTextBoxColumn.Name = "pacienteidDataGridViewTextBoxColumn";
+            this.turnosBindingSource1.DataMember = "Turnos";
+            this.turnosBindingSource1.DataSource = this.veterinariaDataSetBindingSource;
             // 
-            // areaidDataGridViewTextBoxColumn
+            // dataGridView1
             // 
-            this.areaidDataGridViewTextBoxColumn.DataPropertyName = "Area_id";
-            this.areaidDataGridViewTextBoxColumn.HeaderText = "Area_id";
-            this.areaidDataGridViewTextBoxColumn.Name = "areaidDataGridViewTextBoxColumn";
-            // 
-            // horarioDataGridViewTextBoxColumn
-            // 
-            this.horarioDataGridViewTextBoxColumn.DataPropertyName = "Horario";
-            this.horarioDataGridViewTextBoxColumn.HeaderText = "Horario";
-            this.horarioDataGridViewTextBoxColumn.Name = "horarioDataGridViewTextBoxColumn";
-            // 
-            // fechaDataGridViewTextBoxColumn
-            // 
-            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
-            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(39, 88);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(619, 297);
+            this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Form2
             // 
@@ -218,9 +162,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(193)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(684, 431);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Buscar);
             this.Controls.Add(this.button5);
@@ -230,10 +171,12 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.veterinariaDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.turnosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veterinariaDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.veterinariaDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turnosBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -243,21 +186,15 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private VeterinariaDataSet veterinariaDataSet;
         private System.Windows.Forms.BindingSource turnosBindingSource;
         private VeterinariaDataSetTableAdapters.TurnosTableAdapter turnosTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pacienteidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn areaidDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn horarioDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource veterinariaDataSetBindingSource;
+        private System.Windows.Forms.BindingSource turnosBindingSource1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

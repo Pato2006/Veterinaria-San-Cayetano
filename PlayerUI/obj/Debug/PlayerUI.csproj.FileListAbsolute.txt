@@ -101,3 +101,4 @@ C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb
 C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe.config
 C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe
 C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.pdb
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.SuggestedBindingRedirects.cache
