@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Data;
 using System.Reflection.Emit;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace PlayerUI
 {
@@ -110,10 +111,9 @@ namespace PlayerUI
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=PC-F-06\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
                 "Database=Vete;" +
                 "Trusted_Connection=True;";
-
 
             // Consulta SQL para obtener los turnos
             string query = "SELECT Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha FROM Pacientes INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
@@ -141,36 +141,33 @@ namespace PlayerUI
                     }
                 }
 
-                // Crea las columnas de texto (4 columnas)
-                DataGridViewTextBoxColumn idColumn = new DataGridViewTextBoxColumn();
-                idColumn.HeaderText = "Nombre";
-                dataGridView1.Columns.Add(idColumn);
+                // Limpiar columnas y filas existentes
+                dataGridView1.Columns.Clear();
+                dataGridView1.Rows.Clear();
 
-                DataGridViewTextBoxColumn pacienteColumn = new DataGridViewTextBoxColumn();
-                pacienteColumn.HeaderText = "Animal";
-                dataGridView1.Columns.Add(pacienteColumn);
+                // Estilo del DataGridView
+                dataGridView1.BackgroundColor = Color.White; // Color de fondo
+                dataGridView1.DefaultCellStyle.BackColor = Color.LightBlue; // Color de celdas
+                dataGridView1.DefaultCellStyle.ForeColor = Color.Black; // Color de texto
+                dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightGreen; // Color al seleccionar
+                dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black; // Color de texto al seleccionar
+                dataGridView1.RowHeadersVisible = false; // Ocultar las cabeceras de fila
+                dataGridView1.AllowUserToResizeColumns = false; // Evitar el cambio de tamaño de columnas
 
-                DataGridViewTextBoxColumn fechaColumn = new DataGridViewTextBoxColumn();
-                fechaColumn.HeaderText = "Raza";
-                dataGridView1.Columns.Add(fechaColumn);
+                // Añadir columnas
+                dataGridView1.Columns.Add("Nombre", "Nombre");
+                dataGridView1.Columns.Add("Animal", "Animal");
+                dataGridView1.Columns.Add("Raza", "Raza");
+                dataGridView1.Columns.Add("Fecha", "Fecha");
+                dataGridView1.Columns.Add("Horario", "Hora");
 
-                DataGridViewTextBoxColumn mascotaColumn = new DataGridViewTextBoxColumn();
-                mascotaColumn.HeaderText = "Fecha";
-                dataGridView1.Columns.Add(mascotaColumn);
-
-                DataGridViewTextBoxColumn HoraColumn = new DataGridViewTextBoxColumn();
-                HoraColumn.HeaderText = "Hora";
-                dataGridView1.Columns.Add(HoraColumn);
-
-
-                // Crea una nueva columna de botones
                 DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-                buttonColumn.HeaderText = "Historia"; // Título de la columna
-                buttonColumn.Text = "Ver"; // Texto del botón
-                buttonColumn.UseColumnTextForButtonValue = true; // Para mostrar el texto en todas las filas
+                buttonColumn.HeaderText = "Historia";
+                buttonColumn.Text = "Ver";
+                buttonColumn.UseColumnTextForButtonValue = true;
                 dataGridView1.Columns.Add(buttonColumn);
 
-                // Mostrar los datos obtenidos (puedes adaptar esto para tu DataGridView)
+                // Mostrar los datos obtenidos
                 foreach (DataRow row in turnosTable.Rows)
                 {
                     string Nombre = row["Nombre"].ToString();
@@ -179,9 +176,13 @@ namespace PlayerUI
                     string Fecha = row["Fecha"].ToString();
                     string Horario = row["Horario"].ToString();
 
-                    // Agrega la fila con datos en las 4 columnas de texto y el botón
+                    // Agrega la fila con datos en las columnas
                     dataGridView1.Rows.Add(Nombre, Animal, Raza, Fecha, Horario);
                 }
+
+                // Ajustar el tamaño del DataGridView para evitar barras de desplazamiento
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridView1.ScrollBars = ScrollBars.None; // Quitar barras de desplazamiento
             }
             catch (Exception ex)
             {
