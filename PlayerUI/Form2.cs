@@ -84,7 +84,7 @@ namespace PlayerUI
         private void label3_Click(object sender, EventArgs e) { }
         private void button1_Click_1(object sender, EventArgs e) {
        
-               Form_.openChildForm(new Form2_Historias());
+               Form_.openChildForm(new Form4_Turnos_Añadir());
            
         }
 

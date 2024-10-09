@@ -53,7 +53,7 @@ namespace PlayerUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Historias());
+            openChildForm(new Form2_Historias(this));
             //..
             //your codes
             //..
@@ -230,8 +230,7 @@ namespace PlayerUI
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos(//this
-                                              ));
+            openChildForm(new Form2_Productos());
         }
     }
 }

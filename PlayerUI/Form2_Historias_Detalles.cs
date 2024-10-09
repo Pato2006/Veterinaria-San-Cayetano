@@ -101,5 +101,10 @@ namespace PlayerUI
         {
             openChildForm(new Form2_Historias_Ejemplo());
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

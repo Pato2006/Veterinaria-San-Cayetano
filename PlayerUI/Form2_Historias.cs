@@ -14,11 +14,14 @@ namespace PlayerUI
     {
         private Form activeForm = null;
         private Panel panelChildForm;
-        public Form2_Historias()
+        private Form1 Form_;
+        public Form2_Historias(Form1 form1)
         {
             InitializeComponent();
             InitializeChildFormPanel();
             hideSubMenu();
+            Form_ = form1;
+
         }
         private void hideSubMenu()
         {
@@ -90,6 +93,11 @@ namespace PlayerUI
         private void Buscar_Click(object sender, EventArgs e)
         {
             openChildForm(new Form2_Historias_Detalles());
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
