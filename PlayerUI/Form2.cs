@@ -11,14 +11,15 @@ namespace PlayerUI
     {
         private Form activeForm = null;
         private Panel panelChildForm;
+        private Form1 Form_;
 
-        public Form2()
+        public Form2(Form1 form_)
         {
             InitializeComponent();
             InitializeChildFormPanel();
             hideSubMenu();
             ObtenerTurnos();
-
+            Form_ = form_;
         }
         private void hideSubMenu()
         {
@@ -42,21 +43,6 @@ namespace PlayerUI
             };
             this.Controls.Add(panelChildForm);
         }
-
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null) activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Clear();
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -96,7 +82,11 @@ namespace PlayerUI
         private void label2_Click(object sender, EventArgs e) { }
         private void textBox1_TextChanged(object sender, EventArgs e) { }
         private void label3_Click(object sender, EventArgs e) { }
-        private void button1_Click_1(object sender, EventArgs e) { }
+        private void button1_Click_1(object sender, EventArgs e) {
+       
+               Form_.openChildForm(new Form2_Historias());
+           
+        }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -111,8 +101,8 @@ namespace PlayerUI
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                "Database=Vete;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
+                "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
