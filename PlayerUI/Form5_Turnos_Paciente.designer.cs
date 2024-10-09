@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form4_Turnos_Añadir
+    partial class Form5_Turnos_Paciente
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             this.textBoxRaza = new System.Windows.Forms.TextBox();
             this.textBoxFecha = new System.Windows.Forms.TextBox();
             this.textBoxAnimal = new System.Windows.Forms.TextBox();
+            this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxHorario = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -66,6 +67,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(619, 313);
             this.dataGridView1.TabIndex = 2;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button5
             // 
@@ -100,7 +102,7 @@
             // textBoxRaza
             // 
             this.textBoxRaza.AccessibleName = "textBoxRaza ";
-            this.textBoxRaza.Location = new System.Drawing.Point(190, 132);
+            this.textBoxRaza.Location = new System.Drawing.Point(295, 132);
             this.textBoxRaza.Name = "textBoxRaza";
             this.textBoxRaza.Size = new System.Drawing.Size(100, 20);
             this.textBoxRaza.TabIndex = 24;
@@ -109,7 +111,7 @@
             // textBoxFecha
             // 
             this.textBoxFecha.AccessibleName = "textBoxFecha ";
-            this.textBoxFecha.Location = new System.Drawing.Point(437, 132);
+            this.textBoxFecha.Location = new System.Drawing.Point(401, 132);
             this.textBoxFecha.Name = "textBoxFecha";
             this.textBoxFecha.Size = new System.Drawing.Size(100, 20);
             this.textBoxFecha.TabIndex = 25;
@@ -118,16 +120,25 @@
             // textBoxAnimal
             // 
             this.textBoxAnimal.AccessibleName = "textBoxAnimal ";
-            this.textBoxAnimal.Location = new System.Drawing.Point(61, 132);
+            this.textBoxAnimal.Location = new System.Drawing.Point(179, 132);
             this.textBoxAnimal.Name = "textBoxAnimal";
             this.textBoxAnimal.Size = new System.Drawing.Size(100, 20);
             this.textBoxAnimal.TabIndex = 26;
             this.textBoxAnimal.TextChanged += new System.EventHandler(this.textBoxAnimal_TextChanged);
             // 
+            // textBoxNombre
+            // 
+            this.textBoxNombre.AccessibleName = "textBoxNombre ";
+            this.textBoxNombre.Location = new System.Drawing.Point(54, 132);
+            this.textBoxNombre.Name = "textBoxNombre";
+            this.textBoxNombre.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNombre.TabIndex = 27;
+            this.textBoxNombre.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
+            // 
             // textBoxHorario
             // 
             this.textBoxHorario.AccessibleName = "textBoxHorario ";
-            this.textBoxHorario.Location = new System.Drawing.Point(304, 132);
+            this.textBoxHorario.Location = new System.Drawing.Point(507, 132);
             this.textBoxHorario.Name = "textBoxHorario";
             this.textBoxHorario.Size = new System.Drawing.Size(100, 20);
             this.textBoxHorario.TabIndex = 28;
@@ -136,7 +147,7 @@
             // button2
             // 
             this.button2.AccessibleName = "buttonGuardar ";
-            this.button2.Location = new System.Drawing.Point(567, 132);
+            this.button2.Location = new System.Drawing.Point(507, 180);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 29;
@@ -144,7 +155,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
-            // Form4_Turnos_Añadir
+            // Form5_Turnos_Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -152,6 +163,7 @@
             this.ClientSize = new System.Drawing.Size(684, 431);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBoxHorario);
+            this.Controls.Add(this.textBoxNombre);
             this.Controls.Add(this.textBoxAnimal);
             this.Controls.Add(this.textBoxFecha);
             this.Controls.Add(this.textBoxRaza);
@@ -159,7 +171,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Form4_Turnos_Añadir";
+            this.Name = "Form5_Turnos_Paciente";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form4_Turnos_Añadir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -177,6 +189,7 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxHorario;
+        private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxAnimal;
         private System.Windows.Forms.TextBox textBoxFecha;
         private System.Windows.Forms.TextBox textBoxRaza;

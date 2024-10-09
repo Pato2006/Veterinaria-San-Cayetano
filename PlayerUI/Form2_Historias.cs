@@ -99,5 +99,15 @@ namespace PlayerUI
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form_.openChildForm(new Form5_Turnos_Paciente());
+        }
+
+        private void Form2_Historias_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -109,6 +109,7 @@
             this.button1.TabIndex = 24;
             this.button1.Text = "Añadir nueva historia clinica";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Buscar
             // 
@@ -137,6 +138,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form2_Historias";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Historias_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

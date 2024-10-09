@@ -107,3 +107,4 @@ D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.For
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Productos.resources
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Ejemplo.resources
 C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir.resources
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form5_Turnos_Paciente.resources

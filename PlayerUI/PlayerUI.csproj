@@ -53,6 +53,12 @@
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5_Turnos_Paciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5_Turnos_Paciente.designer.cs">
+      <DependentUpon>Form5_Turnos_Paciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form4_Turnos_Añadir.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5_Turnos_Paciente.resx">
+      <DependentUpon>Form5_Turnos_Paciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form4_Turnos_Añadir.resx">
       <DependentUpon>Form4_Turnos_Añadir.cs</DependentUpon>
