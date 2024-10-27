@@ -101,7 +101,7 @@ namespace PlayerUI
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-91O09BE\\SQLEXPRESS;" +
                 "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 
@@ -143,6 +143,11 @@ namespace PlayerUI
                 dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black; // Color de texto al seleccionar
                 dataGridView1.RowHeadersVisible = false; // Ocultar las cabeceras de fila
                 dataGridView1.AllowUserToResizeColumns = false; // Evitar el cambio de tamaño de columnas
+
+                dataGridView1.ReadOnly = true;          // Hace que todas las celdas sean solo lectura
+                dataGridView1.AllowUserToAddRows = false;  // Desactiva la opción de agregar nuevas filas
+                dataGridView1.AllowUserToDeleteRows = false; // Desactiva la opción de eliminar filas
+                dataGridView1.AllowUserToOrderColumns = false;
 
                 // Añadir columnas
                 dataGridView1.Columns.Add("Nombre", "Nombre");
