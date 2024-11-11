@@ -14,20 +14,20 @@ namespace PlayerUI
     public partial class Form2_Productos_Lista : Form
     {
 
-        private Form1 padre;
+        private Form1 Form_;
 
-        public Form2_Productos_Lista(Form1 Form_)
+        public Form2_Productos_Lista(Form1 form)
         {
             InitializeComponent();
             ObtenerProductos();
-            padre = Form_;
+            Form_ = form;
         }
 
         private void ObtenerProductos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-91O09BE\\SQLEXPRESS;" +
-                "Database=Veterinaria;" +
+            string connectionString = "Server=PC-F-06\\SQLEXPRESS;" +
+                "Database=Cayetano;" +
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los productos
@@ -123,7 +123,7 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //fojarse en Form1.cs que ahi esta la guarangada
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -139,6 +139,16 @@ namespace PlayerUI
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Form2_Productos_Lista_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_.openChildForm(new Form2_Productos());
         }
     }
 
