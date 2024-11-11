@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Data;
-using System.Reflection.Emit;
 using System.Windows.Forms;
 using System.Drawing;
 
@@ -13,6 +12,9 @@ namespace PlayerUI
         private Panel panelChildForm;
         private Form1 Form_;
 
+        // Definir la variable para almacenar el valor del TextBox
+        private string variable = string.Empty;
+
         public Form2(Form1 form_)
         {
             InitializeComponent();
@@ -21,9 +23,11 @@ namespace PlayerUI
             ObtenerTurnos();
             Form_ = form_;
         }
+
         private void hideSubMenu()
         {
         }
+
         private void showSubMenu(Panel subMenu)
         {
             if (subMenu.Visible == false)
@@ -43,6 +47,7 @@ namespace PlayerUI
             };
             this.Controls.Add(panelChildForm);
         }
+
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -74,18 +79,15 @@ namespace PlayerUI
             {
                 dataGridView1.Rows.Add();
             }
-
         }
 
-        // Métodos restantes
         private void label1_Click(object sender, EventArgs e) { }
         private void label2_Click(object sender, EventArgs e) { }
-        private void textBox1_TextChanged(object sender, EventArgs e) { }
         private void label3_Click(object sender, EventArgs e) { }
-        private void button1_Click_1(object sender, EventArgs e) {
-       
-               Form_.openChildForm(new Form4_Turnos_Añadir());
-           
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form_.openChildForm(new Form4_Turnos_Añadir());
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -95,18 +97,29 @@ namespace PlayerUI
                 // Acción al presionar el botón
                 MessageBox.Show($"Botón presionado en la fila {e.RowIndex + 1}");
             }
+        }
 
+        // Evento TextChanged del TextBox1 para asignar el valor a la variable
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            variable = textBox1.Text;  // Asigna el valor del TextBox a la variable
         }
 
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-91O09BE\\SQLEXPRESS;" +
-                "Database=Veterinaria;" +
+            string connectionString = "Server=PC-F-06\\SQLEXPRESS;" +
+                "Database=Cayetano;" +
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
             string query = "SELECT Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha FROM Pacientes INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
+
+            // Verificar si la variable contiene algo
+            if (!string.IsNullOrEmpty(variable))
+            {
+                query += " WHERE Pacientes.Nombre LIKE @nombre"; // Filtrar por el nombre del paciente
+            }
 
             // Crear un DataTable para almacenar los resultados de la consulta
             DataTable turnosTable = new DataTable();
@@ -122,6 +135,12 @@ namespace PlayerUI
                     // Crear un SqlCommand para ejecutar la consulta
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
+                        // Si hay un filtro, añadir el parámetro
+                        if (!string.IsNullOrEmpty(variable))
+                        {
+                            cmd.Parameters.AddWithValue("@nombre", "%" + variable + "%");
+                        }
+
                         // Crear un SqlDataAdapter para llenar el DataTable
                         using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
@@ -208,9 +227,7 @@ namespace PlayerUI
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'veterinariaDataSet.Turnos' Puede moverla o quitarla según sea necesario.
             
-
         }
     }
 }

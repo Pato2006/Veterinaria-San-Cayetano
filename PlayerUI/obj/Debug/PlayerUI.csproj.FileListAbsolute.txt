@@ -127,3 +127,4 @@ C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug
 C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
 C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.exe
 C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.SuggestedBindingRedirects.cache

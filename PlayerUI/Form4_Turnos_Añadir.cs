@@ -66,7 +66,7 @@ namespace PlayerUI
             string horario = textBoxHorario.Text;
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=PC-F-06\\SQLEXPRESS;Database=Cayetano;Trusted_Connection=True;";
 
             // Consulta SQL para insertar un nuevo turno
             string query = "INSERT INTO Turnos (Paciente_id, Area_id, Horario, Fecha) VALUES (@paciente, @area, @horario, @Fecha)";
