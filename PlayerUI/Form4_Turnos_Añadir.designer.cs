@@ -105,6 +105,7 @@
             // textBoxNombre
             // 
             this.textBoxNombre.AccessibleName = "textBoxNombre ";
+            this.textBoxNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textBoxNombre.Location = new System.Drawing.Point(54, 158);
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(109, 20);
@@ -113,7 +114,7 @@
             // textBoxHorario
             // 
             this.textBoxHorario.AccessibleName = "textBoxHorario";
-            this.textBoxHorario.Location = new System.Drawing.Point(284, 157);
+            this.textBoxHorario.Location = new System.Drawing.Point(284, 159);
             this.textBoxHorario.Name = "textBoxHorario";
             this.textBoxHorario.Size = new System.Drawing.Size(109, 20);
             this.textBoxHorario.TabIndex = 36;
@@ -121,7 +122,7 @@
             // textBoxFecha
             // 
             this.textBoxFecha.AccessibleName = "textBoxFecha";
-            this.textBoxFecha.Location = new System.Drawing.Point(400, 157);
+            this.textBoxFecha.Location = new System.Drawing.Point(400, 159);
             this.textBoxFecha.Name = "textBoxFecha";
             this.textBoxFecha.Size = new System.Drawing.Size(109, 20);
             this.textBoxFecha.TabIndex = 37;
@@ -130,7 +131,7 @@
             // 
             this.buttonAñadir.AccessibleName = "buttonGuardar ";
             this.buttonAñadir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonAñadir.Location = new System.Drawing.Point(525, 157);
+            this.buttonAñadir.Location = new System.Drawing.Point(525, 134);
             this.buttonAñadir.Name = "buttonAñadir";
             this.buttonAñadir.Size = new System.Drawing.Size(109, 20);
             this.buttonAñadir.TabIndex = 38;
@@ -179,11 +180,13 @@
             // comboBoxArea
             // 
             this.comboBoxArea.AccessibleName = "comboBoxArea";
+            this.comboBoxArea.Cursor = System.Windows.Forms.Cursors.PanSE;
             this.comboBoxArea.FormattingEnabled = true;
             this.comboBoxArea.Location = new System.Drawing.Point(169, 158);
             this.comboBoxArea.Name = "comboBoxArea";
             this.comboBoxArea.Size = new System.Drawing.Size(109, 21);
             this.comboBoxArea.TabIndex = 50;
+            this.comboBoxArea.SelectedIndexChanged += new System.EventHandler(this.comboBoxArea_SelectedIndexChanged);
             // 
             // Form4_Turnos_Añadir
             // 
@@ -205,7 +208,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Form4_Turnos_Añadir";
-            this.Text = "Form2";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form4_Turnos_Añadir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

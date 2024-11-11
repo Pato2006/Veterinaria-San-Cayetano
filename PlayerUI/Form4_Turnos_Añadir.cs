@@ -191,5 +191,10 @@ namespace PlayerUI
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
+
+        private void comboBoxArea_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            comboBoxArea.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
     }
 }

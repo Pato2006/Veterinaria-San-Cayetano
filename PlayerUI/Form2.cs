@@ -72,10 +72,19 @@ namespace PlayerUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            if (e.ColumnIndex == 6 && e.RowIndex >= 0) // 5 es la columna del botón "Ver"
             {
-                // Acción al presionar el botón
-                MessageBox.Show($"Botón presionado en la fila {e.RowIndex + 1}");
+                // Recuperar los valores de TurnoID y PacienteID de las columnas ocultas
+                string turnoID = dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value.ToString();
+                string pacienteID = dataGridView1.Rows[e.RowIndex].Cells["PacienteID"].Value.ToString();
+
+                // Mostrar los valores o abrir otro formulario con la información del turno y paciente
+                MessageBox.Show($"Botón presionado para Turno ID: {turnoID} y Paciente ID: {pacienteID}");
+
+                // Aquí puedes abrir otro formulario, pasando los IDs para mostrar más detalles
+                // Ejemplo:
+                // Form5_HistorialTurno historialForm = new Form5_HistorialTurno(turnoID, pacienteID);
+                // historialForm.Show();
             }
         }
 
@@ -93,7 +102,9 @@ namespace PlayerUI
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
-            string query = "SELECT Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha FROM Pacientes INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
+            string query = "SELECT Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.ID AS TurnoID, Pacientes.ID AS PacienteID " +
+                           "FROM Pacientes " +
+                           "INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
 
             // Verificar si la variable contiene algo
             if (!string.IsNullOrEmpty(variable))
@@ -135,31 +146,38 @@ namespace PlayerUI
                 dataGridView1.Rows.Clear();
 
                 // Estilo del DataGridView
-                dataGridView1.BackgroundColor = Color.White; // Color de fondo
-                dataGridView1.DefaultCellStyle.BackColor = Color.LightBlue; // Color de celdas
-                dataGridView1.DefaultCellStyle.ForeColor = Color.Black; // Color de texto
-                dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightGreen; // Color al seleccionar
-                dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black; // Color de texto al seleccionar
-                dataGridView1.RowHeadersVisible = false; // Ocultar las cabeceras de fila
-                dataGridView1.AllowUserToResizeColumns = false; // Evitar el cambio de tamaño de columnas
+                dataGridView1.BackgroundColor = Color.White;
+                dataGridView1.DefaultCellStyle.BackColor = Color.LightBlue;
+                dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+                dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightGreen;
+                dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+                dataGridView1.RowHeadersVisible = false;
+                dataGridView1.AllowUserToResizeColumns = false;
 
-                dataGridView1.ReadOnly = true;          // Hace que todas las celdas sean solo lectura
-                dataGridView1.AllowUserToAddRows = false;  // Desactiva la opción de agregar nuevas filas
-                dataGridView1.AllowUserToDeleteRows = false; // Desactiva la opción de eliminar filas
+                dataGridView1.ReadOnly = true;
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.AllowUserToDeleteRows = false;
                 dataGridView1.AllowUserToOrderColumns = false;
 
-                // Añadir columnas
+                // Añadir columnas visibles
                 dataGridView1.Columns.Add("Nombre", "Nombre");
                 dataGridView1.Columns.Add("Animal", "Animal");
                 dataGridView1.Columns.Add("Raza", "Raza");
                 dataGridView1.Columns.Add("Fecha", "Fecha");
                 dataGridView1.Columns.Add("Horario", "Hora");
 
+                // Columna para el botón "Ver"
                 DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
                 buttonColumn.HeaderText = "Historia";
                 buttonColumn.Text = "Ver";
                 buttonColumn.UseColumnTextForButtonValue = true;
                 dataGridView1.Columns.Add(buttonColumn);
+
+                // Añadir columnas ocultas para almacenar los IDs
+                dataGridView1.Columns.Add("TurnoID", "TurnoID");
+                dataGridView1.Columns.Add("PacienteID", "PacienteID");
+                dataGridView1.Columns["TurnoID"].Visible = false;
+                dataGridView1.Columns["PacienteID"].Visible = false;
 
                 // Mostrar los datos obtenidos
                 foreach (DataRow row in turnosTable.Rows)
@@ -169,18 +187,20 @@ namespace PlayerUI
                     string Raza = row["Raza"].ToString();
                     string Fecha = row["Fecha"].ToString();
                     string Horario = row["Horario"].ToString();
+                    string TurnoID = row["TurnoID"].ToString();
+                    string PacienteID = row["PacienteID"].ToString();
 
-                    // Agrega la fila con datos en las columnas
-                    dataGridView1.Rows.Add(Nombre, Animal, Raza, Fecha, Horario);
+                    // Agregar la fila con los datos    s y ocultos (IDs)
+                    dataGridView1.Rows.Add(Nombre, Animal, Raza, Fecha, Horario, TurnoID, PacienteID);
                 }
 
-                // Ajustar el tamaño del DataGridView para evitar barras de desplazamiento
+                // Ajustar el tamaño del DataGridView
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dataGridView1.ScrollBars = ScrollBars.None; // Quitar barras de desplazamiento
+                dataGridView1.ScrollBars = ScrollBars.None;
             }
             catch (Exception ex)
             {
-                // Manejo de errores en caso de que ocurra un problema con la conexión o consulta
+                // Manejo de errores
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
@@ -207,7 +227,7 @@ namespace PlayerUI
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
