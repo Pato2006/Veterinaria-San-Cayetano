@@ -55,30 +55,10 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //openChildForm(new Form2_Ejemplo());
-            string textoGuardado;
+            // Guardar el contenido del TextBox en la variable
+            variable = textBox1.Text;
 
-            // Guarda el contenido del TextBox en la variable
-            textoGuardado = textBox1.Text;
-            MessageBox.Show("Texto guardado: " + textoGuardado);
-
-            // Elimina columnas anteriores (si existen)
-            dataGridView1.Columns.Clear();
-
-            // Crea una nueva columna de botones
-            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-            buttonColumn.HeaderText = "Acciones"; // Título de la columna
-            buttonColumn.Text = "Presiona"; // Texto del botón
-            buttonColumn.UseColumnTextForButtonValue = true; // Para mostrar el texto en todas las filas
-
-            // Agrega la columna al DataGridView
-            dataGridView1.Columns.Add(buttonColumn);
-
-            // Agrega algunas filas de ejemplo (opcional)
-            for (int i = 1; i < 5; i++)
-            {
-                dataGridView1.Rows.Add();
-            }
+            ObtenerTurnos();
         }
 
         private void label1_Click(object sender, EventArgs e) { }
@@ -113,7 +93,7 @@ namespace PlayerUI
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
-            string query = "SELECT Animal, Raza, Nombre, Edad, Telefono FROM Pacientes;";
+            string query = "SELECT Animal, Raza, Nombre, Edad, Telefono FROM Pacientes";
 
             // Verificar si la variable contiene algo
             if (!string.IsNullOrEmpty(variable))

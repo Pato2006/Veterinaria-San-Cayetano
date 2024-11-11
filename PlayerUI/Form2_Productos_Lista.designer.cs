@@ -108,6 +108,7 @@
             this.button2.TabIndex = 25;
             this.button2.Text = "Añadir nuevo producto";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Buscar
             // 
@@ -135,6 +136,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form2_Productos_Lista";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Productos_Lista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
