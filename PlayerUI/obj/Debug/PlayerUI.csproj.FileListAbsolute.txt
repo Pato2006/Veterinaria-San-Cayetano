@@ -127,4 +127,27 @@ C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug
 C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
 C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.exe
 C:\Users\lucer\Documents\veterinaria\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb
+<<<<<<< HEAD
 C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.SuggestedBindingRedirects.cache
+=======
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe.config
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.pdb
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.AssemblyReference.cache
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form1.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form5_Turnos_Paciente.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Productos_Lista.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_Ejemplo.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_Detalles.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Productos.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form3.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Properties.Resources.resources
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.GenerateResource.cache
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.exe
+C:\Users\Alumno\Desktop\ASDSADSAD\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb
+>>>>>>> e19269f85f5d3f917bf3aadcd9ea893d50d66c24
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form6_Añadir_Proveedores.resources

@@ -6,12 +6,12 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form5_Turnos_Paciente : Form
+    public partial class Form6_Añadir_Proveedores : Form
     {
         private Form activeForm = null;
         private Panel panelChildForm;
 
-        public Form5_Turnos_Paciente()
+        public Form6_Añadir_Proveedores()
         {
             InitializeComponent();  
             InitializeChildFormPanel();
@@ -59,17 +59,14 @@ namespace PlayerUI
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
             // Variables para capturar los valores de los TextBox
-            string animal = textBoxAnimal.Text;
-            string nombre = textBoxNombre.Text;
-            string raza = textBoxRaza.Text;
-            string edad = textBoxEdad.Text;
             string telefono = textBoxTelefono.Text;
+            string nombre = textBoxNombre.Text;
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
             string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
 
             // Consulta SQL para insertar un nuevo turno
-            string query = "INSERT INTO Pacientes (Animal, Raza, Nombre, Edad, Telefono) VALUES (@Animal, @Raza, @Nombre, @Edad, @Telefono)";
+            string query = "INSERT INTO Proveedores (Nombre, Telefono) VALUES (@Nombre,@Telefono)";
 
             try
             {
@@ -79,11 +76,8 @@ namespace PlayerUI
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        // Agregar parámetros para prevenir inyecciones SQL
-                        cmd.Parameters.AddWithValue("@Animal", animal);
-                        cmd.Parameters.AddWithValue("@Raza", raza);
-                        cmd.Parameters.AddWithValue("@Nombre", nombre);
-                        cmd.Parameters.AddWithValue("@Edad", edad);
+                        // Agregar parámetros para prevenir inyecciones SQL                     
+                        cmd.Parameters.AddWithValue("@Nombre", nombre);             
                         cmd.Parameters.AddWithValue("@Telefono", telefono);
 
                         // Ejecutar la consulta
@@ -132,11 +126,6 @@ namespace PlayerUI
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
         {
 
         }
