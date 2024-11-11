@@ -88,8 +88,8 @@ namespace PlayerUI
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=PC-F-06\\SQLEXPRESS;" +
-                "Database=Cayetano;" +
+            string connectionString = "Server=DESKTOP-QB22C4J\\SQLEXPRESS;" +
+                "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
