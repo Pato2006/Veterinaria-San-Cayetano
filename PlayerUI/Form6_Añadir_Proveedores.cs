@@ -6,14 +6,14 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form4_Turnos_Añadir : Form
+    public partial class Form6_Añadir_Proveedores : Form
     {
         private Form activeForm = null;
         private Panel panelChildForm;
 
-        public Form4_Turnos_Añadir()
+        public Form6_Añadir_Proveedores()
         {
-            InitializeComponent();
+            InitializeComponent();  
             InitializeChildFormPanel();
             hideSubMenu();
         }
@@ -59,17 +59,17 @@ namespace PlayerUI
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
             // Variables para capturar los valores de los TextBox
-           
-            string nombre = textBoxAnimal.Text;
+            string animal = textBoxAnimal.Text;
+            string nombre = textBoxNombre.Text;
             string raza = textBoxRaza.Text;
-            string fecha = textBoxFecha.Text;
-            string horario = textBoxHorario.Text;
+            string edad = textBoxFecha.Text;
+            string telefono = textBoxHorario.Text;
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
             string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
 
             // Consulta SQL para insertar un nuevo turno
-            string query = "INSERT INTO Turnos (Paciente_id, Area_id, Horario, Fecha) VALUES (@paciente, @area, @horario, @Fecha)";
+            string query = "INSERT INTO Pacientes (Animal, Raza, Nombre, Edad, Telefono) VALUES (@Animal, @Raza, @Nombre, @Edad, @Telefono)";
 
             try
             {
@@ -80,10 +80,11 @@ namespace PlayerUI
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
                         // Agregar parámetros para prevenir inyecciones SQL
-                        cmd.Parameters.AddWithValue("@paciente", nombre);
-                        cmd.Parameters.AddWithValue("@area", raza);
-                        cmd.Parameters.AddWithValue("@horario", horario);
-                        cmd.Parameters.AddWithValue("@Fecha", fecha);
+                        cmd.Parameters.AddWithValue("@Animal", animal);
+                        cmd.Parameters.AddWithValue("@Raza", raza);
+                        cmd.Parameters.AddWithValue("@Nombre", nombre);
+                        cmd.Parameters.AddWithValue("@Edad", edad);
+                        cmd.Parameters.AddWithValue("@Telefono", telefono);
 
                         // Ejecutar la consulta
                         int result = cmd.ExecuteNonQuery();
@@ -114,6 +115,10 @@ namespace PlayerUI
         {
         }
 
+        private void textBoxNombre_TextChanged(object sender, EventArgs e)
+        {
+        }
+
         private void textBoxAnimal_TextChanged(object sender, EventArgs e)
         {
         }
@@ -126,7 +131,7 @@ namespace PlayerUI
         {
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
