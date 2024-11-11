@@ -72,7 +72,7 @@ namespace PlayerUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 5 && e.RowIndex >= 0) // 5 es la columna del botón "Ver"
+            if (e.ColumnIndex == 6 && e.RowIndex >= 0) // 5 es la columna del botón "Ver"
             {
                 // Recuperar los valores de TurnoID y PacienteID de las columnas ocultas
                 string turnoID = dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value.ToString();
