@@ -53,7 +53,7 @@ namespace PlayerUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Historias(this));
+            openChildForm(new Form3_pacientes(this));
             //..
             //your codes
             //..
@@ -157,7 +157,7 @@ namespace PlayerUI
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            
             
             hideSubMenu();
         }

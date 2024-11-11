@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form5_Turnos_Paciente
+    partial class Form5_Añadir_Paciente
     {
         /// <summary>
         /// Required designer variable.
@@ -144,7 +144,7 @@
             // 
             this.button2.AccessibleName = "buttonGuardar ";
             this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(401, 186);
+            this.button2.Location = new System.Drawing.Point(522, 181);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 20);
             this.button2.TabIndex = 39;
@@ -205,7 +205,7 @@
             this.textBoxNombre.Size = new System.Drawing.Size(109, 20);
             this.textBoxNombre.TabIndex = 48;
             // 
-            // Form5_Turnos_Paciente
+            // Form5_Añadir_Paciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -226,7 +226,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Form5_Turnos_Paciente";
+            this.Name = "Form5_Añadir_Paciente";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form4_Turnos_Añadir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

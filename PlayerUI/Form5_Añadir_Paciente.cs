@@ -6,12 +6,12 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form5_Turnos_Paciente : Form
+    public partial class Form5_Añadir_Paciente : Form
     {
         private Form activeForm = null;
         private Panel panelChildForm;
 
-        public Form5_Turnos_Paciente()
+        public Form5_Añadir_Paciente()
         {
             InitializeComponent();  
             InitializeChildFormPanel();
