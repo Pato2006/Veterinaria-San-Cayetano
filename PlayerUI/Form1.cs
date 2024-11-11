@@ -232,5 +232,10 @@ namespace PlayerUI
         {
             openChildForm(new Form2_Productos());
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
