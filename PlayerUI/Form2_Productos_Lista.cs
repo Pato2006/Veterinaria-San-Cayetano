@@ -194,6 +194,109 @@ namespace PlayerUI
         {
             Form_.openChildForm(new Form6_Añadir_Proveedores());
         }
-    }
 
+        private void Buscar_Click(object sender, EventArgs e)
+        {
+            string variable = textBox1.Text;
+            ObtenerProductos(variable);
+        }
+
+        private void ObtenerProductos(string variable)
+        {
+            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+                "Database=Veterinaria;" +
+                "Trusted_Connection=True;";
+
+            // Consulta SQL para obtener los productos
+            string query = @"
+        SELECT 
+            Productos.nombre, 
+            Productos.precio_unitario, 
+            Productos.stock, 
+            Proveedores.Nombre AS Proveedor 
+        FROM 
+            Productos 
+        INNER JOIN 
+            Proveedores 
+            ON Proveedores.ID = Productos.Proveedor_id 
+        WHERE 
+            Productos.Nombre LIKE @nombre";
+
+            // Creamos un DataTable para almacenar los productos obtenidos
+            DataTable productosTable = new DataTable();
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    con.Open();
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        // Añadir el parámetro @nombre con el valor del textbox
+                        cmd.Parameters.AddWithValue("@nombre", "%" + variable + "%");
+
+                        // Crear un SqlDataAdapter para llenar el DataTable
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+                            da.Fill(productosTable); // Llenar el DataTable con los resultados
+                        }
+                    }
+                }
+
+                // Limpiar columnas y filas existentes
+                dataGridView1.Columns.Clear();
+                dataGridView1.Rows.Clear();
+
+                // Configuración del DataGridView
+                dataGridView1.BackgroundColor = Color.White;
+                dataGridView1.DefaultCellStyle.BackColor = Color.LightBlue;
+                dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+                dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightGreen;
+                dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+                dataGridView1.RowHeadersVisible = false;
+                dataGridView1.AllowUserToResizeColumns = false;
+                dataGridView1.ReadOnly = true;
+                dataGridView1.AllowUserToAddRows = false; // No permitir agregar filas
+                dataGridView1.AllowUserToDeleteRows = false;
+                dataGridView1.AllowUserToOrderColumns = false;
+
+                // Añadir columnas visibles
+                dataGridView1.Columns.Add("Nombre", "Nombre");
+                dataGridView1.Columns.Add("Precio_unitario", "Precio Unitario");
+                dataGridView1.Columns.Add("Stock", "Stock");
+                dataGridView1.Columns.Add("Proveedor", "Proveedor");
+
+                // Añadir columna de botón "Acciones"
+                DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
+                {
+                    HeaderText = "Acciones",
+                    Text = "Abrir Formulario",
+                    UseColumnTextForButtonValue = true
+                };
+                dataGridView1.Columns.Add(buttonColumn);
+
+                // Mostrar los datos obtenidos
+                foreach (DataRow row in productosTable.Rows)
+                {
+                    string Nombre = row["Nombre"].ToString();
+                    decimal PrecioUnitario = Convert.ToDecimal(row["Precio_unitario"]);
+                    int Stock = Convert.ToInt32(row["Stock"]);
+                    string Proveedor = row["Proveedor"].ToString();
+
+                    // Agregar fila a DataGridView
+                    dataGridView1.Rows.Add(Nombre, PrecioUnitario, Stock, Proveedor);
+                }
+
+                // Ajustar las columnas para que se ajusten automáticamente al contenido
+                dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dataGridView1.ScrollBars = ScrollBars.None;
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+    }
 }
