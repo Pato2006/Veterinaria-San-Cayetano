@@ -59,6 +59,12 @@
     <Compile Include="Form3_pacientes.designer.cs">
       <DependentUpon>Form3_pacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2_Historias_editar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2_Historias_editar.designer.cs">
+      <DependentUpon>Form2_Historias_editar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form7_Añadir_producto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,12 +107,6 @@
     <Compile Include="Form2_Historias_Detalles.designer.cs">
       <DependentUpon>Form2_Historias_Detalles.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2_Historias.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form2_Historias.designer.cs">
-      <DependentUpon>Form2_Historias.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form2_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +132,9 @@
     <EmbeddedResource Include="Form3_pacientes.resx">
       <DependentUpon>Form3_pacientes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2_Historias_editar.resx">
+      <DependentUpon>Form2_Historias_editar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form7_Añadir_producto.resx">
       <DependentUpon>Form7_Añadir_producto.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,9 +155,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2_Historias_Detalles.resx">
       <DependentUpon>Form2_Historias_Detalles.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form2_Historias.resx">
-      <DependentUpon>Form2_Historias.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2_Productos.resx">
       <DependentUpon>Form2_Productos.cs</DependentUpon>

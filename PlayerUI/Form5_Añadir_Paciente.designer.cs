@@ -37,7 +37,7 @@
             this.textBoxEdad = new System.Windows.Forms.TextBox();
             this.textBoxRaza = new System.Windows.Forms.TextBox();
             this.textBoxTelefono = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonGuardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -127,17 +127,17 @@
             this.textBoxTelefono.TabIndex = 26;
             this.textBoxTelefono.TextChanged += new System.EventHandler(this.textBoxAnimal_TextChanged);
             // 
-            // button2
+            // buttonGuardar
             // 
-            this.button2.AccessibleName = "buttonGuardar ";
-            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button2.Location = new System.Drawing.Point(292, 233);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 20);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Añadir paciente";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonGuardar.AccessibleName = "buttonGuardar";
+            this.buttonGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonGuardar.Location = new System.Drawing.Point(292, 228);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(109, 20);
+            this.buttonGuardar.TabIndex = 39;
+            this.buttonGuardar.Text = "Añadir paciente";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -205,7 +205,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.textBoxAnimal);
             this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.textBoxEdad);
@@ -233,7 +233,7 @@
         private System.Windows.Forms.TextBox textBoxTelefono;
         private System.Windows.Forms.TextBox textBoxEdad;
         private System.Windows.Forms.TextBox textBoxRaza;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

@@ -182,3 +182,4 @@ D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.For
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form5_Añadir_Paciente.resources
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir.resources
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form7_Añadir_producto.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_editar.resources

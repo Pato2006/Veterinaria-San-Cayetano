@@ -92,11 +92,11 @@ namespace PlayerUI
                         // Verificar si el registro fue insertado con éxito
                         if (result > 0)
                         {
-                            MessageBox.Show("Turno añadido exitosamente.");
+                            MessageBox.Show("Paciente añadido exitosamente.");
                         }
                         else
                         {
-                            MessageBox.Show("Error al añadir el turno.");
+                            MessageBox.Show("Error al añadir el Paciente.");
                         }
                     }
                 }
@@ -143,7 +143,54 @@ namespace PlayerUI
 
         private void button2_Click(object sender, EventArgs e)
         {
+            // Variables para capturar los valores de los TextBox
+            string animal = textBoxAnimal.Text;
+            string nombre = textBoxNombre.Text;
+            string raza = textBoxRaza.Text;
+            string edad = textBoxEdad.Text;
+            string telefono = textBoxTelefono.Text;
 
+            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+
+            // Consulta SQL para insertar un nuevo turno
+            string query = "INSERT INTO Pacientes (Animal, Raza, Nombre, Edad, Telefono) VALUES (@Animal, @Raza, @Nombre, @Edad, @Telefono)";
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    con.Open();
+
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        // Agregar parámetros para prevenir inyecciones SQL
+                        cmd.Parameters.AddWithValue("@Animal", animal);
+                        cmd.Parameters.AddWithValue("@Raza", raza);
+                        cmd.Parameters.AddWithValue("@Nombre", nombre);
+                        cmd.Parameters.AddWithValue("@Edad", edad);
+                        cmd.Parameters.AddWithValue("@Telefono", telefono);
+
+                        // Ejecutar la consulta
+                        int result = cmd.ExecuteNonQuery();
+
+                        // Verificar si el registro fue insertado con éxito
+                        if (result > 0)
+                        {
+                            MessageBox.Show("Paciente añadido exitosamente.");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error al añadir el Paciente.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
         }
+
     }
 }

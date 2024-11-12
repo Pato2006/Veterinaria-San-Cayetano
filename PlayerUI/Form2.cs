@@ -72,19 +72,14 @@ namespace PlayerUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 6 && e.RowIndex >= 0) // 5 es la columna del botón "Ver"
+            // Verifica si el clic fue en la columna de botón y si es una fila válida
+            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-                // Recuperar los valores de TurnoID y PacienteID de las columnas ocultas
-                string turnoID = dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value.ToString();
-                string pacienteID = dataGridView1.Rows[e.RowIndex].Cells["PacienteID"].Value.ToString();
+                // Obtener el valor de TurnoID desde la columna oculta (TurnoID está en la columna oculta)
+                int turnoID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value);
 
-                // Mostrar los valores o abrir otro formulario con la información del turno y paciente
-                MessageBox.Show($"Botón presionado para Turno ID: {turnoID} y Paciente ID: {pacienteID}");
-
-                // Aquí puedes abrir otro formulario, pasando los IDs para mostrar más detalles
-                // Ejemplo:
-                // Form5_HistorialTurno historialForm = new Form5_HistorialTurno(turnoID, pacienteID);
-                // historialForm.Show();
+                // Abrir el formulario con el TurnoID obtenido y pasar también Form1 como parámetro
+                Form_.openChildForm(new Form2_Historias_Detalles(turnoID, Form_));
             }
         }
 
@@ -102,7 +97,7 @@ namespace PlayerUI
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
-            string query = "SELECT Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.ID AS TurnoID, Pacientes.ID AS PacienteID " +
+            string query = "SELECT Turnos.ID AS TurnoID, Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.ID AS TurnoID, Pacientes.ID AS PacienteID " +
                            "FROM Pacientes " +
                            "INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
 
@@ -187,10 +182,10 @@ namespace PlayerUI
                     string Raza = row["Raza"].ToString();
                     string Fecha = row["Fecha"].ToString();
                     string Horario = row["Horario"].ToString();
-                    string TurnoID = row["TurnoID"].ToString();
+                    string TurnoID = row["TurnoID"].ToString(); // Obtener el valor de TurnoID
                     string PacienteID = row["PacienteID"].ToString();
 
-                    // Agregar la fila con los datos    s y ocultos (IDs)
+                    // Agregar la fila con los datos y ocultos (IDs)
                     dataGridView1.Rows.Add(Nombre, Animal, Raza, Fecha, Horario, TurnoID, PacienteID);
                 }
 

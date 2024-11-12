@@ -70,15 +70,6 @@ namespace PlayerUI
             Form_.openChildForm(new Form5_Añadir_Paciente());
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
-            {
-                // Acción al presionar el botón
-                MessageBox.Show($"Botón presionado en la fila {e.RowIndex + 1}");
-            }
-        }
-
         // Evento TextChanged del TextBox1 para asignar el valor a la variable
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -93,75 +84,62 @@ namespace PlayerUI
                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
-            string query = "SELECT Animal, Raza, Nombre, Edad, Telefono FROM Pacientes";
+            string query = "SELECT ID, Animal, Raza, Nombre, Edad, Telefono FROM Pacientes";
 
-            // Verificar si la variable contiene algo
             if (!string.IsNullOrEmpty(variable))
             {
                 query += " WHERE Nombre LIKE @nombre"; // Filtrar por el nombre del paciente
             }
 
-            // Crear un DataTable para almacenar los resultados de la consulta
             DataTable turnosTable = new DataTable();
 
             try
             {
-                // Crear una conexión usando SqlConnection
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    // Abrir la conexión
                     con.Open();
-
-                    // Crear un SqlCommand para ejecutar la consulta
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        // Si hay un filtro, añadir el parámetro
                         if (!string.IsNullOrEmpty(variable))
                         {
                             cmd.Parameters.AddWithValue("@nombre", "%" + variable + "%");
                         }
 
-                        // Crear un SqlDataAdapter para llenar el DataTable
                         using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
-                            // Llenar el DataTable con los resultados de la consulta
                             da.Fill(turnosTable);
                         }
                     }
                 }
 
-                // Limpiar columnas y filas existentes
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
 
-                // Estilo del DataGridView
-                dataGridView1.BackgroundColor = Color.White; // Color de fondo
-                dataGridView1.DefaultCellStyle.BackColor = Color.LightBlue; // Color de celdas
-                dataGridView1.DefaultCellStyle.ForeColor = Color.Black; // Color de texto
-                dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightGreen; // Color al seleccionar
-                dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black; // Color de texto al seleccionar
-                dataGridView1.RowHeadersVisible = false; // Ocultar las cabeceras de fila
-                dataGridView1.AllowUserToResizeColumns = false; // Evitar el cambio de tamaño de columnas
-
-                dataGridView1.ReadOnly = true;          // Hace que todas las celdas sean solo lectura
-                dataGridView1.AllowUserToAddRows = false;  // Desactiva la opción de agregar nuevas filas
-                dataGridView1.AllowUserToDeleteRows = false; // Desactiva la opción de eliminar filas
-                dataGridView1.AllowUserToOrderColumns = false;
-
-                // Añadir columnas
+                // Agregar columnas visibles
                 dataGridView1.Columns.Add("Nombre", "Nombre");
                 dataGridView1.Columns.Add("Animal", "Animal");
                 dataGridView1.Columns.Add("Raza", "Raza");
                 dataGridView1.Columns.Add("Edad", "Edad");
                 dataGridView1.Columns.Add("Telefono", "Telefono");
 
-                DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
-                buttonColumn.HeaderText = "Historia";
-                buttonColumn.Text = "Ver";
-                buttonColumn.UseColumnTextForButtonValue = true;
+                // Agregar columna oculta para ID
+                var idColumn = new DataGridViewTextBoxColumn
+                {
+                    Name = "ID",
+                    Visible = false // Ocultar la columna de ID
+                };
+                dataGridView1.Columns.Add(idColumn);
+
+                // Agregar columna de botón
+                DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
+                {
+                    HeaderText = "Historia",
+                    Text = "Ver",
+                    UseColumnTextForButtonValue = true
+                };
                 dataGridView1.Columns.Add(buttonColumn);
 
-                // Mostrar los datos obtenidos
+                // Agregar datos a las filas
                 foreach (DataRow row in turnosTable.Rows)
                 {
                     string Nombre = row["Nombre"].ToString();
@@ -169,18 +147,16 @@ namespace PlayerUI
                     string Raza = row["Raza"].ToString();
                     string Edad = row["Edad"].ToString();
                     string Telefono = row["Telefono"].ToString();
+                    string ID = row["ID"].ToString();
 
-                    // Agrega la fila con datos en las columnas
-                    dataGridView1.Rows.Add(Nombre, Animal, Raza, Edad, Telefono);
+                    dataGridView1.Rows.Add(Nombre, Animal, Raza, Edad, Telefono, ID);
                 }
 
-                // Ajustar el tamaño del DataGridView para evitar barras de desplazamiento
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-                dataGridView1.ScrollBars = ScrollBars.None; // Quitar barras de desplazamiento
+                dataGridView1.ScrollBars = ScrollBars.None;
             }
             catch (Exception ex)
             {
-                // Manejo de errores en caso de que ocurra un problema con la conexión o consulta
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
@@ -208,6 +184,17 @@ namespace PlayerUI
         private void Form2_Load(object sender, EventArgs e)
         {
             
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+                // Obtener el valor de ID desde la columna oculta
+                int idValue = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
+
+                // Abrir el formulario con el ID obtenido y pasar también Form1 como parámetro
+                Form_.openChildForm(new Form2_Historias_Detalles(idValue, Form_));
+            }
         }
     }
 }
