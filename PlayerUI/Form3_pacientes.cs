@@ -100,6 +100,7 @@ namespace PlayerUI
                     con.Open();
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
+                        // Solo se agrega el parámetro si la variable no está vacía
                         if (!string.IsNullOrEmpty(variable))
                         {
                             cmd.Parameters.AddWithValue("@nombre", "%" + variable + "%");
@@ -107,13 +108,22 @@ namespace PlayerUI
 
                         using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
+                            // Limpiar DataTable antes de llenarlo
+                            turnosTable.Clear();
                             da.Fill(turnosTable);
                         }
                     }
                 }
 
+                // Limpiar las columnas y filas del DataGridView antes de agregar nuevos datos
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
+
+                dataGridView1.ReadOnly = true;
+                dataGridView1.AllowUserToAddRows = false;
+                dataGridView1.AllowUserToDeleteRows = false;
+                dataGridView1.AllowUserToOrderColumns = false;
+
 
                 // Agregar columnas visibles
                 dataGridView1.Columns.Add("Nombre", "Nombre");
@@ -149,9 +159,16 @@ namespace PlayerUI
                     string Telefono = row["Telefono"].ToString();
                     string ID = row["ID"].ToString();
 
-                    dataGridView1.Rows.Add(Nombre, Animal, Raza, Edad, Telefono, ID);
+                    // Agregar fila solo si todos los campos son válidos
+                    if (!string.IsNullOrEmpty(Nombre) && !string.IsNullOrEmpty(Animal) &&
+                        !string.IsNullOrEmpty(Raza) && !string.IsNullOrEmpty(Edad) &&
+                        !string.IsNullOrEmpty(Telefono) && !string.IsNullOrEmpty(ID))
+                    {
+                        dataGridView1.Rows.Add(Nombre, Animal, Raza, Edad, Telefono, ID);
+                    }
                 }
 
+                // Asegurarse de que las columnas se ajusten automáticamente
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.ScrollBars = ScrollBars.None;
             }
