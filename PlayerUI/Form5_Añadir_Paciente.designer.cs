@@ -33,7 +33,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.textBoxAnimal = new System.Windows.Forms.TextBox();
             this.textBoxEdad = new System.Windows.Forms.TextBox();
             this.textBoxRaza = new System.Windows.Forms.TextBox();
@@ -92,18 +91,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // button1
-            // 
-            this.button1.AccessibleDescription = "";
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(525, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 26);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Añadir nuevo paciente";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // textBoxAnimal
             // 
             this.textBoxAnimal.AccessibleName = "textBoxNombre ";
@@ -150,6 +137,7 @@
             this.button2.TabIndex = 39;
             this.button2.Text = "Añadir paciente";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
@@ -222,7 +210,6 @@
             this.Controls.Add(this.textBoxTelefono);
             this.Controls.Add(this.textBoxEdad);
             this.Controls.Add(this.textBoxRaza);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -242,7 +229,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxAnimal;
         private System.Windows.Forms.TextBox textBoxTelefono;
         private System.Windows.Forms.TextBox textBoxEdad;

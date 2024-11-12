@@ -97,7 +97,7 @@ namespace PlayerUI
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-QB22C4J\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
                 "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 

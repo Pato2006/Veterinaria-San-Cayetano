@@ -33,7 +33,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.button1 = new System.Windows.Forms.Button();
             this.textBoxNombre = new System.Windows.Forms.TextBox();
             this.textBoxHorario = new System.Windows.Forms.TextBox();
             this.textBoxFecha = new System.Windows.Forms.TextBox();
@@ -90,18 +89,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // button1
-            // 
-            this.button1.AccessibleDescription = "";
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(525, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 26);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Añadir nuevo turno";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // textBoxNombre
             // 
             this.textBoxNombre.AccessibleName = "textBoxNombre ";
@@ -118,6 +105,7 @@
             this.textBoxHorario.Name = "textBoxHorario";
             this.textBoxHorario.Size = new System.Drawing.Size(109, 20);
             this.textBoxHorario.TabIndex = 36;
+            this.textBoxHorario.TextChanged += new System.EventHandler(this.textBoxHorario_TextChanged_1);
             // 
             // textBoxFecha
             // 
@@ -147,6 +135,7 @@
             this.label6.TabIndex = 46;
             this.label6.Text = "Nombre del paciente";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label4
             // 
@@ -203,7 +192,6 @@
             this.Controls.Add(this.textBoxFecha);
             this.Controls.Add(this.textBoxHorario);
             this.Controls.Add(this.textBoxNombre);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
@@ -223,7 +211,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBoxNombre;
         private System.Windows.Forms.TextBox textBoxFecha;
         private System.Windows.Forms.TextBox textBoxHorario;

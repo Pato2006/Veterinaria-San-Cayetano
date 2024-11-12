@@ -63,7 +63,7 @@ namespace PlayerUI
             string nombre = textBoxNombre.Text;
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
 
             // Consulta SQL para insertar un nuevo turno
             string query = "INSERT INTO Proveedores (Nombre, Telefono) VALUES (@Nombre,@Telefono)";

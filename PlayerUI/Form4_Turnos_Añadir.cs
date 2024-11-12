@@ -133,7 +133,7 @@ namespace PlayerUI
             string fechaSQL = fechaConvertida.ToString("yyyy-MM-dd");
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=PC-F-06\\SQLEXPRESS;Database=Cayetano;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
 
             // Primero obtenemos el ID del paciente usando su nombre
             string pacienteId = null;
@@ -195,6 +195,16 @@ namespace PlayerUI
         private void comboBoxArea_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxArea.DropDownStyle = ComboBoxStyle.DropDownList;
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxHorario_TextChanged_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

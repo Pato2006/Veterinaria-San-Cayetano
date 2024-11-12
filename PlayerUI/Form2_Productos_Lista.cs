@@ -72,7 +72,7 @@ namespace PlayerUI
         private void ObtenerProductos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-QB22C4J;" +
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
                                       "Database=Veterinaria;" +
                                       "Trusted_Connection=True;";
 
@@ -185,7 +185,10 @@ namespace PlayerUI
 
         }
 
-
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form_.openChildForm(new Form7_Añadir_producto());
+        }
     }
 
 }

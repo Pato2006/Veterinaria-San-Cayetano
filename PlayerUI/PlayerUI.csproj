@@ -59,6 +59,12 @@
     <Compile Include="Form3_pacientes.designer.cs">
       <DependentUpon>Form3_pacientes.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form7_Añadir_producto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form7_Añadir_producto.designer.cs">
+      <DependentUpon>Form7_Añadir_producto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form6_Añadir_Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3_pacientes.resx">
       <DependentUpon>Form3_pacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form7_Añadir_producto.resx">
+      <DependentUpon>Form7_Añadir_producto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form6_Añadir_Proveedores.resx">
       <DependentUpon>Form6_Añadir_Proveedores.cs</DependentUpon>
