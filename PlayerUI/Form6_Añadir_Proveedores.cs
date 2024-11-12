@@ -10,6 +10,7 @@ namespace PlayerUI
     {
         private Form activeForm = null;
         private Panel panelChildForm;
+        private Form1 Form_;
 
         public Form6_Añadir_Proveedores()
         {
@@ -56,51 +57,6 @@ namespace PlayerUI
             childForm.Show();
         }
 
-        private void buttonGuardar_Click(object sender, EventArgs e)
-        {
-            // Variables para capturar los valores de los TextBox
-            string telefono = textBoxTelefono.Text;
-            string nombre = textBoxNombre.Text;
-
-            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
-
-            // Consulta SQL para insertar un nuevo turno
-            string query = "INSERT INTO Proveedores (Nombre, Telefono) VALUES (@Nombre,@Telefono)";
-
-            try
-            {
-                using (SqlConnection con = new SqlConnection(connectionString))
-                {
-                    con.Open();
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        // Agregar parámetros para prevenir inyecciones SQL                     
-                        cmd.Parameters.AddWithValue("@Nombre", nombre);             
-                        cmd.Parameters.AddWithValue("@Telefono", telefono);
-
-                        // Ejecutar la consulta
-                        int result = cmd.ExecuteNonQuery();
-
-                        // Verificar si el registro fue insertado con éxito
-                        if (result > 0)
-                        {
-                            MessageBox.Show("Turno añadido exitosamente.");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error al añadir el turno.");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}");
-            }
-        }
-
         private void Form4_Turnos_Añadir_Load(object sender, EventArgs e)
         {
         }
@@ -126,6 +82,75 @@ namespace PlayerUI
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Obtener los valores de los TextBox
+            string nombreProv = textBoxNombre.Text;
+
+            // Verificar que el teléfono sea un valor válido
+            if (int.TryParse(textBoxTelefono.Text, out int telefono))
+            {
+                // Verificar que el nombre no esté vacío
+                if (string.IsNullOrEmpty(nombreProv))
+                {
+                    MessageBox.Show("Por favor, ingrese el nombre del proveedor.");
+                    return;
+                }
+
+                // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
+                string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+
+                // Consulta SQL para insertar un nuevo proveedor
+                string query = "INSERT INTO Proveedores (Nombre, Telefono) VALUES (@Nombre, @Telefono)";
+
+                try
+                {
+                    using (SqlConnection con = new SqlConnection(connectionString))
+                    {
+                        con.Open();
+
+                        using (SqlCommand cmd = new SqlCommand(query, con))
+                        {
+                            // Agregar parámetros para prevenir inyecciones SQL
+                            cmd.Parameters.AddWithValue("@Nombre", nombreProv);
+                            cmd.Parameters.AddWithValue("@Telefono", telefono);
+
+                            // Ejecutar la consulta
+                            int result = cmd.ExecuteNonQuery();
+
+                            // Verificar si el registro fue insertado con éxito
+                            if (result > 0)
+                            {
+                                MessageBox.Show("Proveedor añadido exitosamente.");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Error al añadir el proveedor.");
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Error: {ex.Message}");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, ingrese un teléfono válido.");
+            }
+        }
+
+        private void textBoxNombre_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxTelefono_TextChanged(object sender, EventArgs e)
         {
 
         }

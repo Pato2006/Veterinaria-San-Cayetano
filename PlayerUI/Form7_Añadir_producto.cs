@@ -10,6 +10,7 @@ namespace PlayerUI
     {
         private Form activeForm = null;
         private Panel panelChildForm;
+        private Form1 Form_;
 
         public Form7_Añadir_producto()
         {
@@ -17,7 +18,6 @@ namespace PlayerUI
             InitializeChildFormPanel();
             hideSubMenu();
         }
-
         private void hideSubMenu()
         {
         }
@@ -174,6 +174,10 @@ namespace PlayerUI
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
         }
     }
 }

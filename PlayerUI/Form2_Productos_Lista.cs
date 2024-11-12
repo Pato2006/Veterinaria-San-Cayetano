@@ -12,9 +12,6 @@ namespace PlayerUI
 {
     public partial class Form2_Productos_Lista : Form
     {
-
-
-
         private Form activeForm = null;
         private Panel panelChildForm;
         private Form1 Form_; // Referencia a Form1
@@ -77,7 +74,9 @@ namespace PlayerUI
                                       "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los productos
-            string query = "SELECT ID, nombre, precio_unitario, stock, proveedor_id FROM Productos";
+            string query = "SELECT Productos.nombre, Productos.precio_unitario, Productos.stock, " +
+                           "Proveedores.Nombre AS Proveedor FROM Productos INNER JOIN Proveedores ON " +
+                           "Proveedores.ID = Productos.Proveedor_id";
 
             // Crear un DataTable para almacenar los resultados de la consulta
             DataTable productosTable = new DataTable();
@@ -111,14 +110,21 @@ namespace PlayerUI
                 dataGridView1.AllowUserToOrderColumns = false;
 
                 // Añadir columnas específicas
-                dataGridView1.Columns.Add("ID", "ID");
                 dataGridView1.Columns.Add("Nombre", "Nombre");
                 dataGridView1.Columns.Add("PrecioUnitario", "Precio Unitario");
                 dataGridView1.Columns.Add("Stock", "Stock");
-                dataGridView1.Columns.Add("ProveedorID", "Proveedor ID");
+                dataGridView1.Columns.Add("Proveedor", "Proveedor");
 
-                // Añadir columna de botón
-                DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
+                dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+                dataGridView1.ScrollBars = ScrollBars.None;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+
+            // Añadir columna de botón
+            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
                 {
                     HeaderText = "Acciones",
                     Text = "Abrir Formulario",
@@ -129,21 +135,15 @@ namespace PlayerUI
                 // Mostrar los datos obtenidos
                 foreach (DataRow row in productosTable.Rows)
                 {
-                    int ID = Convert.ToInt32(row["ID"]);
                     string Nombre = row["nombre"].ToString();
                     decimal PrecioUnitario = Convert.ToDecimal(row["precio_unitario"]);
                     int Stock = Convert.ToInt32(row["stock"]);
-                    int ProveedorID = Convert.ToInt32(row["proveedor_id"]);
-                    dataGridView1.Rows.Add(ID, Nombre, PrecioUnitario, Stock, ProveedorID);
+                    string Proveedor = row["Proveedor"].ToString();
+                    dataGridView1.Rows.Add(Nombre, PrecioUnitario, Stock, Proveedor);
                 }
 
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.ScrollBars = ScrollBars.None;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}");
-            }
         }
 
         // Evento para manejar el clic en la columna de botones
@@ -188,6 +188,11 @@ namespace PlayerUI
         private void button2_Click(object sender, EventArgs e)
         {
             Form_.openChildForm(new Form7_Añadir_producto());
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Form_.openChildForm(new Form6_Añadir_Proveedores());
         }
     }
 
