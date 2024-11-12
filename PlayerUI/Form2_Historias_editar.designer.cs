@@ -117,6 +117,7 @@
             this.textBoxFecha.Name = "textBoxFecha";
             this.textBoxFecha.Size = new System.Drawing.Size(109, 20);
             this.textBoxFecha.TabIndex = 37;
+            this.textBoxFecha.TextChanged += new System.EventHandler(this.textBoxFecha_TextChanged_1);
             // 
             // buttonAñadir
             // 
@@ -194,6 +195,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(109, 20);
             this.textBox2.TabIndex = 53;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // Form2_Historias_editar
             // 

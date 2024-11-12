@@ -92,84 +92,60 @@ namespace PlayerUI
 
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
-            // Variables para capturar los valores de los controles
-            string nombre = textBoxNombre.Text;
-            string fecha = textBoxFecha.Text;
-            string horario = textBoxHorario.Text;
-
-            // Verificar que el nombre no esté vacío
-            if (string.IsNullOrEmpty(nombre))
-            {
-                MessageBox.Show("Por favor, ingrese el nombre del paciente.");
-                return;
-            }
-
-            // Convertir la fecha al formato requerido por SQL Server (yyyy-MM-dd)
-            DateTime fechaConvertida;
-            if (!DateTime.TryParseExact(fecha, "dd/MM/yyyy", null, System.Globalization.DateTimeStyles.None, out fechaConvertida))
-            {
-                MessageBox.Show("La fecha no tiene el formato correcto. Use el formato dd/MM/aa.");
-                return;
-            }
-
-            // Convertir la fecha a un formato compatible con SQL Server (yyyy-MM-dd)
-            string fechaSQL = fechaConvertida.ToString("yyyy-MM-dd");
-
-            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
             string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
-
-            // Primero obtenemos el ID del paciente usando su nombre
-            string pacienteId = null;
-
-            string queryPaciente = "SELECT Id FROM Pacientes WHERE Nombre = @nombre";
-
             try
             {
+                // Obtener los valores de los campos de texto (editados por el usuario)
+                string animal_edit = textBoxNombre.Text;  // Asumiendo que textBoxNombre es el campo para Animal
+                string raza_edit = textBox1.Text;         // Asumiendo que textBox1 es el campo para Raza
+                string nombre_ed = textBoxHorario.Text;   // Asumiendo que textBoxHorario es el campo para Nombre
+                int edad = int.Parse(textBoxFecha.Text);  // Asumiendo que textBoxFecha es el campo para Edad
+                int telefono = int.Parse(textBox2.Text);  // Asumiendo que textBox2 es el campo para Teléfono
+
+                // Consulta SQL para hacer el UPDATE en la tabla Pacientes
+                string queryPaciente = "UPDATE Pacientes SET " +
+                                       "Nombre = @nombre, " +
+                                       "Animal = @animal, " +
+                                       "Raza = @raza, " +
+                                       "Edad = @edad, " +
+                                       "Telefono = @telefono " +
+                                       "WHERE ID = @id";
+
+                // Conexión a la base de datos y ejecución del comando
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    con.Open();
-
-                    // Obtener el ID del paciente
-                    using (SqlCommand cmdPaciente = new SqlCommand(queryPaciente, con))
+                    // Crear un SqlCommand con la consulta y la conexión
+                    using (SqlCommand cmd = new SqlCommand(queryPaciente, con))
                     {
-                        cmdPaciente.Parameters.AddWithValue("@nombre", nombre);
-                        pacienteId = cmdPaciente.ExecuteScalar()?.ToString();
+                        // Agregar los parámetros con los valores obtenidos de los campos de texto
+                        cmd.Parameters.AddWithValue("@nombre", nombre_ed);
+                        cmd.Parameters.AddWithValue("@animal", animal_edit);
+                        cmd.Parameters.AddWithValue("@raza", raza_edit);
+                        cmd.Parameters.AddWithValue("@edad", edad);
+                        cmd.Parameters.AddWithValue("@telefono", telefono);
+                        cmd.Parameters.AddWithValue("@id", id_editar);  // Asegúrate de pasar el ID correcto
 
-                        if (string.IsNullOrEmpty(pacienteId))
+                        // Abrir la conexión
+                        con.Open();
+
+                        // Ejecutar el UPDATE
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        // Verificar si el UPDATE fue exitoso
+                        if (rowsAffected > 0)
                         {
-                            MessageBox.Show("Paciente no encontrado.");
-                            return;
-                        }
-                    }
-
-                    // Ahora insertamos el turno en la tabla Turnos usando el ID del paciente encontrado
-                    string queryTurno = "INSERT INTO Turnos (Paciente_id, Area_id, Horario, Fecha) " +
-                                        "VALUES (@pacienteId, @area, @horario, @Fecha)";
-
-                    using (SqlCommand cmdTurno = new SqlCommand(queryTurno, con))
-                    {
-                        // Agregar los parámetros para la inserción
-                        cmdTurno.Parameters.AddWithValue("@pacienteId", pacienteId);  // Usar el ID del paciente encontrado
-                        cmdTurno.Parameters.AddWithValue("@horario", horario);
-                        cmdTurno.Parameters.AddWithValue("@Fecha", fechaSQL);  // Usar la fecha convertida
-
-                        // Ejecutar la consulta
-                        int result = cmdTurno.ExecuteNonQuery();
-
-                        // Verificar si el registro fue insertado con éxito
-                        if (result > 0)
-                        {
-                            MessageBox.Show("Turno añadido exitosamente.");
+                            MessageBox.Show("Paciente actualizado correctamente.");
                         }
                         else
                         {
-                            MessageBox.Show("Error al añadir el turno.");
+                            MessageBox.Show("No se pudo actualizar el paciente.");
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
+                // Manejo de errores
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
@@ -190,6 +166,16 @@ namespace PlayerUI
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxFecha_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }
