@@ -33,16 +33,6 @@ namespace PlayerUI
             this.Controls.Add(panelChildForm);
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            // Verificar si el clic fue en la columna de botones (última columna)
-            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
-            {
-                // Crear una instancia de Form2_Productos
-                // Llamar a la función que abrirá el formulario dentro del Panel del formulario actual
-                Form_.openChildForm(new Form2_Productos());
-            }
-        }
 
         // Método para abrir un formulario dentro del panel
         private void OpenChildForm(Form childForm)
@@ -74,7 +64,7 @@ namespace PlayerUI
                                       "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los productos
-            string query = "SELECT Productos.nombre, Productos.precio_unitario, Productos.stock, " +
+            string query = "SELECT Productos.ID, Productos.nombre, Productos.precio_unitario, Productos.stock, " +
                            "Proveedores.Nombre AS Proveedor FROM Productos INNER JOIN Proveedores ON " +
                            "Proveedores.ID = Productos.Proveedor_id";
 
@@ -109,22 +99,22 @@ namespace PlayerUI
                 dataGridView1.AllowUserToDeleteRows = false;
                 dataGridView1.AllowUserToOrderColumns = false;
 
-                // Añadir columnas específicas
+                // Añadir columnas visibles
                 dataGridView1.Columns.Add("Nombre", "Nombre");
                 dataGridView1.Columns.Add("PrecioUnitario", "Precio Unitario");
                 dataGridView1.Columns.Add("Stock", "Stock");
                 dataGridView1.Columns.Add("Proveedor", "Proveedor");
 
-                dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
-                dataGridView1.ScrollBars = ScrollBars.None;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}");
-            }
+                // Añadir columna invisible para el ID
+                DataGridViewTextBoxColumn idColumn = new DataGridViewTextBoxColumn
+                {
+                    Name = "ID",
+                    Visible = false // La columna ID no se mostrará al usuario
+                };
+                dataGridView1.Columns.Add(idColumn);
 
-            // Añadir columna de botón
-            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
+                // Añadir columna de botón "Acciones"
+                DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
                 {
                     HeaderText = "Acciones",
                     Text = "Abrir Formulario",
@@ -139,11 +129,34 @@ namespace PlayerUI
                     decimal PrecioUnitario = Convert.ToDecimal(row["precio_unitario"]);
                     int Stock = Convert.ToInt32(row["stock"]);
                     string Proveedor = row["Proveedor"].ToString();
-                    dataGridView1.Rows.Add(Nombre, PrecioUnitario, Stock, Proveedor);
+                    int ID = Convert.ToInt32(row["ID"]);
+
+                    // Agregar fila a DataGridView, incluyendo el ID en la columna invisible
+                    dataGridView1.Rows.Add(Nombre, PrecioUnitario, Stock, Proveedor, ID);
                 }
 
+                // Ajustar las columnas para que se ajusten automáticamente al contenido
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.ScrollBars = ScrollBars.None;
+            }
+            catch (Exception ex)
+            {
+                // Manejo de errores
+                MessageBox.Show($"Error: {ex.Message}");
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Verificar si el clic fue en la columna de botones (última columna)
+            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+                // Obtener el ID del producto desde la columna invisible
+                int idValue = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
+
+                // Abrir el formulario con el ID obtenido y pasar también Form1 como parámetro
+                Form_.openChildForm(new Form2_Productos(idValue));
+            }
         }
 
         // Evento para manejar el clic en la columna de botones
@@ -205,12 +218,13 @@ namespace PlayerUI
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
             string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                "Database=Veterinaria;" +
-                "Trusted_Connection=True;";
+                                      "Database=Veterinaria;" +
+                                      "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los productos
             string query = @"
         SELECT 
+            Productos.ID, 
             Productos.nombre, 
             Productos.precio_unitario, 
             Productos.stock, 
@@ -267,6 +281,14 @@ namespace PlayerUI
                 dataGridView1.Columns.Add("Stock", "Stock");
                 dataGridView1.Columns.Add("Proveedor", "Proveedor");
 
+                // Añadir columna invisible para el ID
+                DataGridViewTextBoxColumn idColumn = new DataGridViewTextBoxColumn
+                {
+                    Name = "ID",
+                    Visible = false // La columna ID no se mostrará al usuario
+                };
+                dataGridView1.Columns.Add(idColumn);
+
                 // Añadir columna de botón "Acciones"
                 DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
                 {
@@ -279,13 +301,14 @@ namespace PlayerUI
                 // Mostrar los datos obtenidos
                 foreach (DataRow row in productosTable.Rows)
                 {
-                    string Nombre = row["Nombre"].ToString();
-                    decimal PrecioUnitario = Convert.ToDecimal(row["Precio_unitario"]);
-                    int Stock = Convert.ToInt32(row["Stock"]);
+                    string Nombre = row["nombre"].ToString();
+                    decimal PrecioUnitario = Convert.ToDecimal(row["precio_unitario"]);
+                    int Stock = Convert.ToInt32(row["stock"]);
                     string Proveedor = row["Proveedor"].ToString();
+                    int ID = Convert.ToInt32(row["ID"]);
 
-                    // Agregar fila a DataGridView
-                    dataGridView1.Rows.Add(Nombre, PrecioUnitario, Stock, Proveedor);
+                    // Agregar fila a DataGridView, incluyendo el ID en la columna invisible
+                    dataGridView1.Rows.Add(Nombre, PrecioUnitario, Stock, Proveedor, ID);
                 }
 
                 // Ajustar las columnas para que se ajusten automáticamente al contenido
@@ -300,3 +323,4 @@ namespace PlayerUI
         }
     }
 }
+

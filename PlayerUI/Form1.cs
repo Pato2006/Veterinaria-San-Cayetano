@@ -220,17 +220,14 @@ namespace PlayerUI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos());
         }
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos());
         }
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new Form2_Productos());
         }
 
         private void Form1_Load(object sender, EventArgs e)
