@@ -77,6 +77,12 @@
     <Compile Include="Form4_Turnos_Añadir_Peluqueria.designer.cs">
       <DependentUpon>Form4_Turnos_Añadir_Peluqueria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form8_consulta - Copia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8_consulta - Copia.designer.cs">
+      <DependentUpon>Form8_consulta - Copia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form6_Añadir_Proveedores.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4_Turnos_Añadir_Peluqueria.resx">
       <DependentUpon>Form4_Turnos_Añadir_Peluqueria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8_consulta - Copia.resx">
+      <DependentUpon>Form8_consulta - Copia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form6_Añadir_Proveedores.resx">
       <DependentUpon>Form6_Añadir_Proveedores.cs</DependentUpon>

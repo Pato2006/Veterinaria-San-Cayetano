@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form2_Historias_editar
+    partial class Form8_consulta
     {
         /// <summary>
         /// Required designer variable.
@@ -33,17 +33,15 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button5 = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.textBoxNombre = new System.Windows.Forms.TextBox();
-            this.textBoxHorario = new System.Windows.Forms.TextBox();
-            this.textBoxFecha = new System.Windows.Forms.TextBox();
-            this.buttonAñadir = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.buttonGuardar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxObservacion = new System.Windows.Forms.TextBox();
+            this.textBoxPeso = new System.Windows.Forms.TextBox();
+            this.textBoxTratamiento = new System.Windows.Forms.TextBox();
+            this.textBoxDiagnostico = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
@@ -54,11 +52,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(252, 18);
+            this.label1.Location = new System.Drawing.Point(254, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 25);
+            this.label1.Size = new System.Drawing.Size(176, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Editar historia clinica";
+            this.label1.Text = "Añadir Descripción";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 
@@ -67,7 +66,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(22)))), ((int)(((byte)(34)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 68);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 72);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(619, 313);
             this.dataGridView1.TabIndex = 2;
@@ -91,134 +90,113 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // textBoxNombre
+            // buttonGuardar
             // 
-            this.textBoxNombre.AccessibleName = "textBoxNombre ";
-            this.textBoxNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxNombre.Location = new System.Drawing.Point(54, 158);
-            this.textBoxNombre.Name = "textBoxNombre";
-            this.textBoxNombre.Size = new System.Drawing.Size(109, 20);
-            this.textBoxNombre.TabIndex = 34;
-            this.textBoxNombre.TextChanged += new System.EventHandler(this.textBoxNombre_TextChanged);
-            // 
-            // textBoxHorario
-            // 
-            this.textBoxHorario.AccessibleName = "textBoxNombre";
-            this.textBoxHorario.Location = new System.Drawing.Point(284, 159);
-            this.textBoxHorario.Name = "textBoxHorario";
-            this.textBoxHorario.Size = new System.Drawing.Size(109, 20);
-            this.textBoxHorario.TabIndex = 36;
-            this.textBoxHorario.TextChanged += new System.EventHandler(this.textBoxHorario_TextChanged_1);
-            // 
-            // textBoxFecha
-            // 
-            this.textBoxFecha.AccessibleName = "textBoxEdad";
-            this.textBoxFecha.Location = new System.Drawing.Point(400, 159);
-            this.textBoxFecha.Name = "textBoxFecha";
-            this.textBoxFecha.Size = new System.Drawing.Size(109, 20);
-            this.textBoxFecha.TabIndex = 37;
-            this.textBoxFecha.TextChanged += new System.EventHandler(this.textBoxFecha_TextChanged_1);
-            // 
-            // buttonAñadir
-            // 
-            this.buttonAñadir.AccessibleName = "buttonGuardar ";
-            this.buttonAñadir.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonAñadir.Location = new System.Drawing.Point(284, 308);
-            this.buttonAñadir.Name = "buttonAñadir";
-            this.buttonAñadir.Size = new System.Drawing.Size(109, 20);
-            this.buttonAñadir.TabIndex = 38;
-            this.buttonAñadir.Text = "Finalizar";
-            this.buttonAñadir.UseVisualStyleBackColor = true;
-            this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
-            // 
-            // label6
-            // 
-            this.label6.Location = new System.Drawing.Point(54, 134);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(109, 20);
-            this.label6.TabIndex = 46;
-            this.label6.Text = "Animal";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(169, 134);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 20);
-            this.label4.TabIndex = 47;
-            this.label4.Text = "Raza";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.buttonGuardar.AccessibleName = "buttonGuardar";
+            this.buttonGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.buttonGuardar.Location = new System.Drawing.Point(283, 234);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(109, 20);
+            this.buttonGuardar.TabIndex = 39;
+            this.buttonGuardar.Text = "Añadir ";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.button2_Click);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(284, 134);
+            this.label2.Location = new System.Drawing.Point(193, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 20);
-            this.label2.TabIndex = 48;
-            this.label2.Text = "Nombre";
+            this.label2.TabIndex = 43;
+            this.label2.Text = "Diagnostico";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(400, 134);
+            this.label3.Location = new System.Drawing.Point(324, 132);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(109, 20);
-            this.label3.TabIndex = 49;
-            this.label3.Text = "Edad";
+            this.label3.TabIndex = 44;
+            this.label3.Text = "Tratamiento";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(465, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(109, 20);
+            this.label4.TabIndex = 45;
+            this.label4.Text = "Peso";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(515, 134);
+            this.label5.Location = new System.Drawing.Point(62, 132);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(109, 20);
-            this.label5.TabIndex = 51;
-            this.label5.Text = "Telefono";
+            this.label5.TabIndex = 47;
+            this.label5.Text = "Observacion";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox1
+            // textBoxObservacion
             // 
-            this.textBox1.AccessibleName = "textBoxRaza";
-            this.textBox1.Location = new System.Drawing.Point(169, 159);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 20);
-            this.textBox1.TabIndex = 52;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxObservacion.AccessibleName = "textBoxObservacion";
+            this.textBoxObservacion.Location = new System.Drawing.Point(62, 155);
+            this.textBoxObservacion.Name = "textBoxObservacion";
+            this.textBoxObservacion.Size = new System.Drawing.Size(109, 20);
+            this.textBoxObservacion.TabIndex = 48;
+            this.textBoxObservacion.TextChanged += new System.EventHandler(this.textBoxObservacion_TextChanged);
             // 
-            // textBox2
+            // textBoxPeso
             // 
-            this.textBox2.AccessibleName = "textBoxTelefono";
-            this.textBox2.Location = new System.Drawing.Point(515, 158);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(109, 20);
-            this.textBox2.TabIndex = 53;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBoxPeso.AccessibleName = "";
+            this.textBoxPeso.Location = new System.Drawing.Point(465, 155);
+            this.textBoxPeso.Name = "textBoxPeso";
+            this.textBoxPeso.Size = new System.Drawing.Size(109, 20);
+            this.textBoxPeso.TabIndex = 49;
+            this.textBoxPeso.TextChanged += new System.EventHandler(this.textBoxPeso_TextChanged);
             // 
-            // Form2_Historias_editar
+            // textBoxTratamiento
+            // 
+            this.textBoxTratamiento.AccessibleName = "textBoxTratamiento";
+            this.textBoxTratamiento.Location = new System.Drawing.Point(324, 155);
+            this.textBoxTratamiento.Name = "textBoxTratamiento";
+            this.textBoxTratamiento.Size = new System.Drawing.Size(109, 20);
+            this.textBoxTratamiento.TabIndex = 50;
+            this.textBoxTratamiento.TextChanged += new System.EventHandler(this.textBoxTratamiento_TextChanged);
+            // 
+            // textBoxDiagnostico
+            // 
+            this.textBoxDiagnostico.AccessibleName = "textBoxDiagnostico";
+            this.textBoxDiagnostico.Location = new System.Drawing.Point(193, 155);
+            this.textBoxDiagnostico.Name = "textBoxDiagnostico";
+            this.textBoxDiagnostico.Size = new System.Drawing.Size(109, 20);
+            this.textBoxDiagnostico.TabIndex = 51;
+            this.textBoxDiagnostico.TextChanged += new System.EventHandler(this.textBoxDiagnostico_TextChanged);
+            // 
+            // Form8_consulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(133)))), ((int)(((byte)(193)))), ((int)(((byte)(233)))));
             this.ClientSize = new System.Drawing.Size(684, 431);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxDiagnostico);
+            this.Controls.Add(this.textBoxTratamiento);
+            this.Controls.Add(this.textBoxPeso);
+            this.Controls.Add(this.textBoxObservacion);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.buttonAñadir);
-            this.Controls.Add(this.textBoxFecha);
-            this.Controls.Add(this.textBoxHorario);
-            this.Controls.Add(this.textBoxNombre);
+            this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2_Historias_editar";
-            this.Text = " ";
+            this.Name = "Form8_consulta";
+            this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form4_Turnos_Añadir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
@@ -233,16 +211,14 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.TextBox textBoxNombre;
-        private System.Windows.Forms.TextBox textBoxFecha;
-        private System.Windows.Forms.TextBox textBoxHorario;
-        private System.Windows.Forms.Button buttonAñadir;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxObservacion;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBoxPeso;
+        private System.Windows.Forms.TextBox textBoxTratamiento;
+        private System.Windows.Forms.TextBox textBoxDiagnostico;
     }
 }

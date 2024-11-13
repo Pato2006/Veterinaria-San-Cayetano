@@ -92,7 +92,7 @@ namespace PlayerUI
 
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
                             "Database=Veterinaria;" +
                             "Trusted_Connection=True;";
             try

@@ -103,7 +103,7 @@ namespace PlayerUI
             string telefono = textBoxTelefono.Text;
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
                 "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 

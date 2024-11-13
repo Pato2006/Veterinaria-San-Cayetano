@@ -1,44 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PlayerUI
 {
     public partial class Form2_Historias_Detalles : Form
     {
-        private int id_paciente;  // Variable para almacenar el ID del paciente
         private Form activeForm = null;
         private Panel panelChildForm;
-        private Form1 Form_;
+        private Form1 Form_; // Para almacenar la referencia de Form1
+        private string variable = string.Empty; // Para almacenar el filtro de búsqueda
+        private int pacienteId; // Para almacenar el ID del paciente
+        private TextBox textBox1; // TextBox para filtrar pacientes
 
-        public Form2_Historias_Detalles(int id, Form1 form_)
+        // Constructor modificado para aceptar Form1 y el ID del paciente
+        public Form2_Historias_Detalles(int pacienteId, Form1 form_)
         {
             InitializeComponent();
-            InitializeChildFormPanel();
-            hideSubMenu();
-            id_paciente = id;
-            CargarDatos(id_paciente);
-            Form_ = form_;
-        }
-        private void hideSubMenu()
-        {
-        }
-        private void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
+            this.pacienteId = pacienteId;
+            this.Form_ = form_;
+            InitializeChildFormPanel(); // Inicializar el panel de formularios hijos
+            ObtenerDatos(); // Cargar los datos del paciente al iniciar el formulario
         }
 
         private void InitializeChildFormPanel()
@@ -50,190 +34,59 @@ namespace PlayerUI
             this.Controls.Add(panelChildForm);
         }
 
-        private void openChildForm(Form childForm)
+        private void OpenChildForm(Form childForm)
         {
-            if (activeForm != null) activeForm.Close();
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Clear();
             panelChildForm.Controls.Add(childForm);
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
 
+
+
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            variable = textBox1.Text;
+            ObtenerDatos(); // Filtrar y obtener los datos al cambiar el texto
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ObtenerDatos()
         {
+            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;Database=Veterinaria;Trusted_Connection=True;";
+            string query = "SELECT Pacientes.Nombre, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.Horario, Turnos.ID AS TurnoID " +
+                           "FROM Pacientes INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
 
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
-        {
-
-        }
-
-        private void Form2_Historias_Detalles_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Form2_Historias_Ejemplo());
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-        private void CargarDatos(int id)
-        {
-            // Cadena de conexión (ajústala según tu servidor y base de datos)
-            string connectionString = "Server=DESKTOP-4QE2QT2;" +
-                "Database=Veterinaria;" +
-                "Trusted_Connection=True;";
-
-            // Consulta SQL para obtener los datos del paciente con el ID especificado
-            string query = "SELECT ID, Nombre, Animal, Raza, Edad, Telefono FROM Pacientes WHERE ID = @id";
-
-            // Crear un DataTable para almacenar los resultados
-            DataTable pacienteData = new DataTable();
-
-            try
+            if (!string.IsNullOrEmpty(variable))
             {
-                // Crear una conexión usando SqlConnection
-                using (SqlConnection con = new SqlConnection(connectionString))
+                if (int.TryParse(variable, out int pacienteId))
                 {
-                    // Abrir la conexión
-                    con.Open();
-
-                    // Crear un SqlCommand para ejecutar la consulta
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        // Agregar el parámetro para la consulta
-                        cmd.Parameters.AddWithValue("@id", id);
-
-                        // Crear un SqlDataAdapter para llenar el DataTable
-                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
-                        {
-                            // Llenar el DataTable con los resultados de la consulta
-                            da.Fill(pacienteData);
-                        }
-                    }
-                }
-
-                // Verificar si se ha encontrado un paciente
-                if (pacienteData.Rows.Count > 0)
-                {
-                    // Acceder a los datos del paciente (si se encuentra en la base de datos)
-                    DataRow row = pacienteData.Rows[0];
-                    string nombre = row["Nombre"].ToString();
-                    string animal = row["Animal"].ToString();
-                    string raza = row["Raza"].ToString();
-                    string edad = row["Edad"].ToString();
-                    string telefono = row["Telefono"].ToString();
-
-                    // Mostrar los datos del paciente en un mensaje (puedes actualizar controles de UI si prefieres)
-                    Nombre.Text = "Nombre: " + nombre;
-                    Animal.Text = "Animal: " + animal;
-                    Raza.Text = "Raza: " + raza;
-                    Edad.Text = "Edad: " + edad;
-                    Telefono.Text = "Telefono: " + telefono;
+                    query += " WHERE Turnos.Paciente_id = @pacienteId";
                 }
                 else
                 {
-                    // Si no se encuentra el paciente
-                    MessageBox.Show("No se encontró un paciente con este ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    query += " WHERE Pacientes.Nombre LIKE @nombre";
                 }
             }
-            catch (Exception ex)
+            else if (pacienteId > 0)
             {
-                // Manejo de errores en caso de que ocurra un problema con la conexión o consulta
-                MessageBox.Show($"Error: {ex.Message}", "Error de conexión", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                query += " WHERE Turnos.Paciente_id = @pacienteId";
             }
-        }
 
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            // Confirmación antes de eliminar
-            var confirmResult = MessageBox.Show("¿Estás seguro de que deseas eliminar este paciente?",
-                                                 "Confirmar Eliminación",
-                                                 MessageBoxButtons.YesNo,
-                                                 MessageBoxIcon.Warning);
-
-            if (confirmResult == DialogResult.Yes)
-            {
-                // Llamamos al método para eliminar el paciente
-                EliminarPaciente();
-            }
-        }
-        private void Nombre_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Animal_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Telefono_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Raza_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Peso_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Edad_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void EliminarPaciente()
-        {
-            // Cadena de conexión
-            string connectionString = "Server=DESKTOP-4QE2QT2;" +
-                "Database=Veterinaria;" +
-                "Trusted_Connection=True;";
-
-            // La consulta DELETE para eliminar al paciente
-            string query = "DELETE FROM Pacientes WHERE ID = @id";
+            DataTable dataTable = new DataTable();
 
             try
             {
@@ -242,38 +95,96 @@ namespace PlayerUI
                     con.Open();
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        // Añadir el parámetro para el ID
-                        cmd.Parameters.AddWithValue("@id", id_paciente);
-
-                        // Ejecutar la consulta
-                        int rowsAffected = cmd.ExecuteNonQuery();
-
-                        if (rowsAffected > 0)
+                        if (pacienteId > 0)
                         {
-                            MessageBox.Show("El paciente ha sido eliminado exitosamente.",
-                                            "Eliminación Exitosa",
-                                            MessageBoxButtons.OK,
-                                            MessageBoxIcon.Information);
+                            cmd.Parameters.AddWithValue("@pacienteId", pacienteId);
                         }
-                        else
+                        else if (!string.IsNullOrEmpty(variable) && !int.TryParse(variable, out _))
                         {
-                            MessageBox.Show("No se pudo encontrar un paciente con este ID.",
-                                            "Error",
-                                            MessageBoxButtons.OK,
-                                            MessageBoxIcon.Error);
+                            cmd.Parameters.AddWithValue("@nombre", "%" + variable + "%");
+                        }
+
+                        using (SqlDataAdapter da = new SqlDataAdapter(cmd))
+                        {
+                            da.Fill(dataTable);
                         }
                     }
                 }
+
+                ConfigurarDataGridView(dataTable);
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error: {ex.Message}", "Error al eliminar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Error: {ex.Message}");
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ConfigurarDataGridView(DataTable dataTable)
         {
-            Form_.openChildForm(new Form2_Historias_editar(id_paciente));
+            dataGridView1.Columns.Clear();
+            dataGridView1.Rows.Clear();
+
+            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.DefaultCellStyle.BackColor = Color.LightBlue;
+            dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.LightGreen;
+            dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.AllowUserToResizeColumns = false;
+
+            dataGridView1.ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToOrderColumns = false;
+
+            // Configurar columnas visibles
+            dataGridView1.Columns.Add("Nombre", "Nombre");
+            dataGridView1.Columns.Add("Animal", "Animal");
+            dataGridView1.Columns.Add("Raza", "Raza");
+            dataGridView1.Columns.Add("Fecha", "Fecha");
+            dataGridView1.Columns.Add("Horario", "Horario");
+
+            // Columna oculta para almacenar el ID del turno
+            dataGridView1.Columns.Add("TurnoID", "TurnoID");
+            dataGridView1.Columns["TurnoID"].Visible = false;
+
+            // Agregar columna de botón "Agregar Descripción"
+            DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
+            buttonColumn.HeaderText = "Acción";
+            buttonColumn.Text = "Agregar Descripción";
+            buttonColumn.UseColumnTextForButtonValue = true;
+            dataGridView1.Columns.Add(buttonColumn);
+
+            // Llenar el DataGridView con los datos obtenidos
+            foreach (DataRow row in dataTable.Rows)
+            {
+                string nombre = row["Nombre"].ToString();
+                string animal = row["Animal"].ToString();
+                string raza = row["Raza"].ToString();
+                string fecha = Convert.ToDateTime(row["Fecha"]).ToShortDateString();
+                string horario = row["Horario"].ToString();
+                int turnoID = Convert.ToInt32(row["TurnoID"]); // Obtener el ID del turno
+
+                dataGridView1.Rows.Add(nombre, animal, raza, fecha, horario, turnoID);
+            }
+
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
+            {
+                int turnoID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value); // Obtener el ID del turno
+
+                // Abrir Form8_Consulta directamente con el ID del turno
+
+                Form_.openChildForm(new Form8_consulta(turnoID)); // Usa Form1 para abrir el formulario como hijo
+
+                // Cierra Form2_Historias_Detalles
+                this.Close();
+            }
+        }
+
     }
 }

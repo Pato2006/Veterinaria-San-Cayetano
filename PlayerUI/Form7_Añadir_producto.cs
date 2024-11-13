@@ -67,7 +67,7 @@ namespace PlayerUI
         // Método para cargar los proveedores en el ComboBox
         private void LoadProveedores()
         {
-            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
                                       "Database=Veterinaria;" +
                                       "Trusted_Connection=True;";
             string query = "SELECT Nombre FROM Proveedores"; // Query para obtener los nombres de los proveedores
@@ -138,7 +138,7 @@ namespace PlayerUI
             }
 
             // Cadena de conexión
-            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
                                       "Database=Veterinaria;" +
                                       "Trusted_Connection=True;";
 
