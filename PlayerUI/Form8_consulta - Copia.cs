@@ -11,32 +11,19 @@ namespace PlayerUI
         private Form activeForm = null;
         private Panel panelChildForm;
         private Form1 Form_;
-        private int turnoId; // Variable para almacenar el ID del turno
+        private int turnoId;
 
-        // Constructor modificado para recibir el ID del turno
         public Form8_consulta(int turnoId)
         {
             InitializeComponent();
             InitializeChildFormPanel();
             hideSubMenu();
 
-            // Guardar el ID del turno recibido
             this.turnoId = turnoId;
         }
 
         private void hideSubMenu()
         {
-        }
-
-        private void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
         }
 
         private void InitializeChildFormPanel()
@@ -48,29 +35,12 @@ namespace PlayerUI
             this.Controls.Add(panelChildForm);
         }
 
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null) activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Clear();
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        // Aquí se recibe el ID del turno y se utiliza
         private void button2_Click(object sender, EventArgs e)
         {
-            // Capturamos los valores de los TextBox
             string diagnostico = textBoxDiagnostico.Text;
             string observacion = textBoxObservacion.Text;
             string tratamiento = textBoxTratamiento.Text;
 
-            // Verificar y convertir el peso
             if (!decimal.TryParse(textBoxPeso.Text, out decimal peso))
             {
                 MessageBox.Show("Por favor, introduce un valor numérico válido para el peso.");

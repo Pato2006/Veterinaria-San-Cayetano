@@ -8,11 +8,10 @@ namespace PlayerUI
 {
     public partial class Form3_pacientes : Form
     {
-        
+
         private Panel panelChildForm;
         private Form1 Form_;
 
-        // Definir la variable para almacenar el valor del TextBox
         private string variable = string.Empty;
 
         public Form3_pacientes(Form1 form_)
@@ -55,40 +54,34 @@ namespace PlayerUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // Guardar el contenido del TextBox en la variable
             variable = textBox1.Text;
 
             ObtenerTurnos();
         }
 
         private void label1_Click(object sender, EventArgs e) { }
-        private void label2_Click(object sender, EventArgs e) { }
-        private void label3_Click(object sender, EventArgs e) { }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
             Form_.openChildForm(new Form5_Añadir_Paciente(Form_));
         }
 
-        // Evento TextChanged del TextBox1 para asignar el valor a la variable
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            variable = textBox1.Text;  // Asigna el valor del TextBox a la variable
+            variable = textBox1.Text;
         }
 
         private void ObtenerTurnos()
         {
-            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
                   "Database=Veterinaria;" +
                   "Trusted_Connection=True;";
 
-            // Consulta SQL para obtener los turnos
             string query = "SELECT ID, Animal, Raza, Nombre, Edad, Telefono FROM Pacientes";
 
             if (!string.IsNullOrEmpty(variable))
             {
-                query += " WHERE Nombre LIKE @nombre"; // Filtrar por el nombre del paciente
+                query += " WHERE Nombre LIKE @nombre";
             }
 
             DataTable turnosTable = new DataTable();
@@ -100,7 +93,6 @@ namespace PlayerUI
                     con.Open();
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        // Solo se agrega el parámetro si la variable no está vacía
                         if (!string.IsNullOrEmpty(variable))
                         {
                             cmd.Parameters.AddWithValue("@nombre", "%" + variable + "%");
@@ -108,14 +100,13 @@ namespace PlayerUI
 
                         using (SqlDataAdapter da = new SqlDataAdapter(cmd))
                         {
-                            // Limpiar DataTable antes de llenarlo
                             turnosTable.Clear();
                             da.Fill(turnosTable);
                         }
                     }
                 }
 
-                // Limpiar las columnas y filas del DataGridView antes de agregar nuevos datos
+                //Limpiar las columnas y filas existentes
                 dataGridView1.Columns.Clear();
                 dataGridView1.Rows.Clear();
 
@@ -125,22 +116,21 @@ namespace PlayerUI
                 dataGridView1.AllowUserToOrderColumns = false;
 
 
-                // Agregar columnas visibles
+                //Columnas visibles
                 dataGridView1.Columns.Add("Nombre", "Nombre");
                 dataGridView1.Columns.Add("Animal", "Animal");
                 dataGridView1.Columns.Add("Raza", "Raza");
                 dataGridView1.Columns.Add("Edad", "Edad");
                 dataGridView1.Columns.Add("Telefono", "Telefono");
 
-                // Agregar columna oculta para ID
+                //Columna oculta
                 var idColumn = new DataGridViewTextBoxColumn
                 {
                     Name = "ID",
-                    Visible = false // Ocultar la columna de ID
+                    Visible = false
                 };
                 dataGridView1.Columns.Add(idColumn);
 
-                // Agregar columna de botón
                 DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn
                 {
                     HeaderText = "Historia",
@@ -149,7 +139,6 @@ namespace PlayerUI
                 };
                 dataGridView1.Columns.Add(buttonColumn);
 
-                // Agregar datos a las filas
                 foreach (DataRow row in turnosTable.Rows)
                 {
                     string Nombre = row["Nombre"].ToString();
@@ -159,7 +148,6 @@ namespace PlayerUI
                     string Telefono = row["Telefono"].ToString();
                     string ID = row["ID"].ToString();
 
-                    // Agregar fila solo si todos los campos son válidos
                     if (!string.IsNullOrEmpty(Nombre) && !string.IsNullOrEmpty(Animal) &&
                         !string.IsNullOrEmpty(Raza) && !string.IsNullOrEmpty(Edad) &&
                         !string.IsNullOrEmpty(Telefono) && !string.IsNullOrEmpty(ID))
@@ -168,7 +156,6 @@ namespace PlayerUI
                     }
                 }
 
-                // Asegurarse de que las columnas se ajusten automáticamente
                 dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 dataGridView1.ScrollBars = ScrollBars.None;
             }
@@ -177,39 +164,16 @@ namespace PlayerUI
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form2_Load(object sender, EventArgs e)
         {
-            
+
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-                // Obtener el valor de ID desde la columna oculta
                 int idValue = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["ID"].Value);
 
-                // Abrir el formulario con el ID obtenido y pasar también Form1 como parámetro
                 Form_.openChildForm(new Form2_Historias_Detalles(idValue, Form_));
             }
         }

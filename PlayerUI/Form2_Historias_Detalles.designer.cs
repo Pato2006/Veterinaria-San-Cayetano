@@ -82,9 +82,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // backgroundWorker1
-            // 
-            // 
             // Form2_Historias_Detalles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -96,6 +93,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form2_Historias_Detalles";
             this.Text = "7";
+            this.Load += new System.EventHandler(this.Form2_Historias_Detalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

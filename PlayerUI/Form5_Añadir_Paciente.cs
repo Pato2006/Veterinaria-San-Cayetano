@@ -14,27 +14,15 @@ namespace PlayerUI
 
         public Form5_Añadir_Paciente(Form1 form)
         {
-            InitializeComponent();  
+            InitializeComponent();
             InitializeChildFormPanel();
             hideSubMenu();
-            Form_= form;
+            Form_ = form;
         }
 
         private void hideSubMenu()
         {
         }
-
-        private void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-                subMenu.Visible = false;
-        }
-
         private void InitializeChildFormPanel()
         {
             panelChildForm = new Panel
@@ -44,26 +32,7 @@ namespace PlayerUI
             this.Controls.Add(panelChildForm);
         }
 
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null) activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Clear();
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        
         private void Form4_Turnos_Añadir_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void textBoxHorario_TextChanged(object sender, EventArgs e)
         {
         }
 
@@ -95,19 +64,16 @@ namespace PlayerUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // Variables para capturar los valores de los TextBox
             string animal = textBoxAnimal.Text;
             string nombre = textBoxNombre.Text;
             string raza = textBoxRaza.Text;
             string edad = textBoxEdad.Text;
             string telefono = textBoxTelefono.Text;
 
-            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
                 "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 
-            // Consulta SQL para insertar un nuevo turno
             string query = "INSERT INTO Pacientes (Animal, Raza, Nombre, Edad, Telefono) VALUES (@Animal, @Raza, @Nombre, @Edad, @Telefono)";
 
             try
@@ -118,17 +84,14 @@ namespace PlayerUI
 
                     using (SqlCommand cmd = new SqlCommand(query, con))
                     {
-                        // Agregar parámetros para prevenir inyecciones SQL
                         cmd.Parameters.AddWithValue("@Animal", animal);
                         cmd.Parameters.AddWithValue("@Raza", raza);
                         cmd.Parameters.AddWithValue("@Nombre", nombre);
                         cmd.Parameters.AddWithValue("@Edad", edad);
                         cmd.Parameters.AddWithValue("@Telefono", telefono);
 
-                        // Ejecutar la consulta
                         int result = cmd.ExecuteNonQuery();
 
-                        // Verificar si el registro fue insertado con éxito
                         if (result > 0)
                         {
                             MessageBox.Show("Paciente añadido exitosamente.");

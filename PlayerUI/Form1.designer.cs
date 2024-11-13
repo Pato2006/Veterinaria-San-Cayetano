@@ -140,7 +140,7 @@
             this.button3.Text = "Pacientes";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+
             // 
             // button2
             // 
@@ -159,7 +159,6 @@
             this.button2.Text = "Turnos";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnExit
             // 

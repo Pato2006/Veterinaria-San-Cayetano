@@ -231,3 +231,27 @@ C:\Users\ariel\Documents\vete\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\Player
 C:\Users\ariel\Documents\vete\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.pdb
 C:\Users\ariel\Documents\vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_consulta.resources
 C:\Users\ariel\Documents\vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form8_consulta.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe.config
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.exe
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\bin\Debug\PlayerUI.pdb
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.AssemblyReference.cache
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form1.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_peluqueria.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form3_pacientes.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_editar.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir_Peluqueria.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form8_consulta.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form6_Añadir_Proveedores.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form7_Añadir_producto.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form5_Añadir_Paciente.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Productos_Lista.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_Ejemplo.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_Detalles.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Productos.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Properties.Resources.resources
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.GenerateResource.cache
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.exe
+D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb

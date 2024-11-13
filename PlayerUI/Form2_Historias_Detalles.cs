@@ -10,19 +10,18 @@ namespace PlayerUI
     {
         private Form activeForm = null;
         private Panel panelChildForm;
-        private Form1 Form_; // Para almacenar la referencia de Form1
-        private string variable = string.Empty; // Para almacenar el filtro de búsqueda
-        private int pacienteId; // Para almacenar el ID del paciente
-        private TextBox textBox1; // TextBox para filtrar pacientes
+        private Form1 Form_;
+        private string variable = string.Empty;
+        private int pacienteId;
+        private TextBox textBox1;
 
-        // Constructor modificado para aceptar Form1 y el ID del paciente
         public Form2_Historias_Detalles(int pacienteId, Form1 form_)
         {
             InitializeComponent();
             this.pacienteId = pacienteId;
             this.Form_ = form_;
-            InitializeChildFormPanel(); // Inicializar el panel de formularios hijos
-            ObtenerDatos(); // Cargar los datos del paciente al iniciar el formulario
+            InitializeChildFormPanel();
+            ObtenerDatos();
         }
 
         private void InitializeChildFormPanel()
@@ -61,7 +60,7 @@ namespace PlayerUI
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             variable = textBox1.Text;
-            ObtenerDatos(); // Filtrar y obtener los datos al cambiar el texto
+            ObtenerDatos();
         }
 
         private void ObtenerDatos()
@@ -137,25 +136,21 @@ namespace PlayerUI
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToOrderColumns = false;
 
-            // Configurar columnas visibles
             dataGridView1.Columns.Add("Nombre", "Nombre");
             dataGridView1.Columns.Add("Animal", "Animal");
             dataGridView1.Columns.Add("Raza", "Raza");
             dataGridView1.Columns.Add("Fecha", "Fecha");
             dataGridView1.Columns.Add("Horario", "Horario");
 
-            // Columna oculta para almacenar el ID del turno
             dataGridView1.Columns.Add("TurnoID", "TurnoID");
             dataGridView1.Columns["TurnoID"].Visible = false;
 
-            // Agregar columna de botón "Agregar Descripción"
             DataGridViewButtonColumn buttonColumn = new DataGridViewButtonColumn();
             buttonColumn.HeaderText = "Acción";
             buttonColumn.Text = "Agregar Descripción";
             buttonColumn.UseColumnTextForButtonValue = true;
             dataGridView1.Columns.Add(buttonColumn);
 
-            // Llenar el DataGridView con los datos obtenidos
             foreach (DataRow row in dataTable.Rows)
             {
                 string nombre = row["Nombre"].ToString();
@@ -163,7 +158,7 @@ namespace PlayerUI
                 string raza = row["Raza"].ToString();
                 string fecha = Convert.ToDateTime(row["Fecha"]).ToShortDateString();
                 string horario = row["Horario"].ToString();
-                int turnoID = Convert.ToInt32(row["TurnoID"]); // Obtener el ID del turno
+                int turnoID = Convert.ToInt32(row["TurnoID"]);
 
                 dataGridView1.Rows.Add(nombre, animal, raza, fecha, horario, turnoID);
             }
@@ -175,16 +170,17 @@ namespace PlayerUI
         {
             if (dataGridView1.Columns[e.ColumnIndex] is DataGridViewButtonColumn && e.RowIndex >= 0)
             {
-                int turnoID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value); // Obtener el ID del turno
+                int turnoID = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["TurnoID"].Value);
 
-                // Abrir Form8_Consulta directamente con el ID del turno
+                Form_.openChildForm(new Form8_consulta(turnoID));
 
-                Form_.openChildForm(new Form8_consulta(turnoID)); // Usa Form1 para abrir el formulario como hijo
-
-                // Cierra Form2_Historias_Detalles
                 this.Close();
             }
         }
 
+        private void Form2_Historias_Detalles_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

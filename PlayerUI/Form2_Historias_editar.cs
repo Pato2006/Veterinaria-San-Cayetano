@@ -42,39 +42,7 @@ namespace PlayerUI
             };
             this.Controls.Add(panelChildForm);
         }
-
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null) activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Clear();
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-      
         private void Form4_Turnos_Añadir_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void textBoxHorario_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBoxAnimal_TextChanged(object sender, EventArgs e)
-        {
-        }
-
-        private void textBoxRaza_TextChanged_1(object sender, EventArgs e)
-        {
-        }
-
-        private void textBoxFecha_TextChanged(object sender, EventArgs e)
         {
         }
 
@@ -92,19 +60,18 @@ namespace PlayerUI
 
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;" +
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
                             "Database=Veterinaria;" +
                             "Trusted_Connection=True;";
             try
             {
-                // Obtener los valores de los campos de texto (editados por el usuario)
-                string animal_edit = textBoxNombre.Text;  // Asumiendo que textBoxNombre es el campo para Animal
-                string raza_edit = textBox1.Text;         // Asumiendo que textBox1 es el campo para Raza
-                string nombre_ed = textBoxHorario.Text;   // Asumiendo que textBoxHorario es el campo para Nombre
-                int edad = int.Parse(textBoxFecha.Text);  // Asumiendo que textBoxFecha es el campo para Edad
-                int telefono = int.Parse(textBox2.Text);  // Asumiendo que textBox2 es el campo para Teléfono
 
-                // Consulta SQL para hacer el UPDATE en la tabla Pacientes
+                string animal_edit = textBoxNombre.Text;
+                string raza_edit = textBox1.Text;
+                string nombre_ed = textBoxHorario.Text;
+                int edad = int.Parse(textBoxFecha.Text);
+                int telefono = int.Parse(textBox2.Text);
+
                 string queryPaciente = "UPDATE Pacientes SET " +
                                        "Nombre = @nombre, " +
                                        "Animal = @animal, " +
@@ -113,27 +80,21 @@ namespace PlayerUI
                                        "Telefono = @telefono " +
                                        "WHERE ID = @id";
 
-                // Conexión a la base de datos y ejecución del comando
                 using (SqlConnection con = new SqlConnection(connectionString))
                 {
-                    // Crear un SqlCommand con la consulta y la conexión
                     using (SqlCommand cmd = new SqlCommand(queryPaciente, con))
                     {
-                        // Agregar los parámetros con los valores obtenidos de los campos de texto
                         cmd.Parameters.AddWithValue("@nombre", nombre_ed);
                         cmd.Parameters.AddWithValue("@animal", animal_edit);
                         cmd.Parameters.AddWithValue("@raza", raza_edit);
                         cmd.Parameters.AddWithValue("@edad", edad);
                         cmd.Parameters.AddWithValue("@telefono", telefono);
-                        cmd.Parameters.AddWithValue("@id", id_editar);  // Asegúrate de pasar el ID correcto
+                        cmd.Parameters.AddWithValue("@id", id_editar);
 
-                        // Abrir la conexión
                         con.Open();
 
-                        // Ejecutar el UPDATE
                         int rowsAffected = cmd.ExecuteNonQuery();
 
-                        // Verificar si el UPDATE fue exitoso
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Paciente actualizado correctamente.");
@@ -147,7 +108,6 @@ namespace PlayerUI
             }
             catch (Exception ex)
             {
-                // Manejo de errores
                 MessageBox.Show($"Error: {ex.Message}");
             }
         }
