@@ -131,7 +131,7 @@
             // 
             this.buttonGuardar.AccessibleName = "buttonGuardar";
             this.buttonGuardar.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.buttonGuardar.Location = new System.Drawing.Point(292, 228);
+            this.buttonGuardar.Location = new System.Drawing.Point(292, 220);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(109, 20);
             this.buttonGuardar.TabIndex = 39;

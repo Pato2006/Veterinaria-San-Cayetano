@@ -150,6 +150,7 @@
             // 
             this.comboBoxPaciente.AccessibleName = "comboBoxArea";
             this.comboBoxPaciente.Cursor = System.Windows.Forms.Cursors.PanSE;
+            this.comboBoxPaciente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPaciente.FormattingEnabled = true;
             this.comboBoxPaciente.Location = new System.Drawing.Point(136, 157);
             this.comboBoxPaciente.Name = "comboBoxPaciente";

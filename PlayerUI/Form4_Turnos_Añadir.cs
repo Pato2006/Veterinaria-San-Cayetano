@@ -37,7 +37,7 @@ namespace PlayerUI
 
         private void FillComboBoxPaciente()
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                                       "Database=Veterinaria;" +
                                       "Trusted_Connection=True;";
 
@@ -102,7 +102,7 @@ namespace PlayerUI
 
             string fechaSQL = fechaConvertida.ToString("yyyy-MM-dd");
 
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                 "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 

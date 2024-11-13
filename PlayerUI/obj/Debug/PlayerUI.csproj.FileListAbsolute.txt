@@ -258,3 +258,8 @@ D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerU
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_peluqueria.resources
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir_Peluqueria.resources
 D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form8_consulta.resources
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_peluqueria.resources
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_Historias_editar.resources
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir_Peluqueria.resources
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form8_consulta.resources
+C:\Users\Alumno\Desktop\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form7_Añadir_producto.resources

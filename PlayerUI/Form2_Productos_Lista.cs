@@ -33,7 +33,7 @@ namespace PlayerUI
         }
         private void ObtenerProductos()
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                 "Database=Veterinaria;" +
                 "Trusted_Connection=True;";
 
@@ -154,7 +154,7 @@ namespace PlayerUI
         }
         private void ObtenerProductos(string variable)
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                  "Database=Veterinaria;" +
                  "Trusted_Connection=True;";
 

@@ -39,7 +39,7 @@ namespace PlayerUI
 
         private void LoadProveedores()
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                                       "Database=Veterinaria;" +
                                       "Trusted_Connection=True;";
 
@@ -88,7 +88,7 @@ namespace PlayerUI
             }
 
             // Cadena de conexión
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                                       "Database=Veterinaria;" +
                                       "Trusted_Connection=True;";
 

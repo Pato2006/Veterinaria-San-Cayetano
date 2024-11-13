@@ -63,27 +63,29 @@ namespace PlayerUI
 
         private void ObtenerDatos()
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+
             string query = "SELECT Pacientes.Nombre, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.Horario, Turnos.ID AS TurnoID, " +
                            "Consultas.Observacion, Consultas.Diagnostico, Consultas.Tratamiento, Consultas.Peso " +
                            "FROM Pacientes " +
                            "INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id " +
-                           "LEFT JOIN Consultas ON Consultas.Turno_ID = Turnos.ID";
+                           "LEFT JOIN Consultas ON Consultas.Turno_ID = Turnos.ID " +
+                           "WHERE Turnos.Area_id = 2";
 
             if (!string.IsNullOrEmpty(variable))
             {
                 if (int.TryParse(variable, out int pacienteId))
                 {
-                    query += " WHERE Turnos.Paciente_id = @pacienteId";
+                    query += " AND Turnos.Paciente_id = @pacienteId";
                 }
                 else
                 {
-                    query += " WHERE Pacientes.Nombre LIKE @nombre";
+                    query += " AND Pacientes.Nombre LIKE @nombre";
                 }
             }
             else if (pacienteId > 0)
             {
-                query += " WHERE Turnos.Paciente_id = @pacienteId";
+                query += " AND Turnos.Paciente_id = @pacienteId";
             }
 
             DataTable dataTable = new DataTable();

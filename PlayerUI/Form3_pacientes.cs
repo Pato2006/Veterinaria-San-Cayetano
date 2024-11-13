@@ -73,7 +73,7 @@ namespace PlayerUI
 
         private void ObtenerTurnos()
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
+            string connectionString = "Server=DESKTOP-3CPGI44\\SQLEXPRESS;" +
                   "Database=Veterinaria;" +
                   "Trusted_Connection=True;";
 
