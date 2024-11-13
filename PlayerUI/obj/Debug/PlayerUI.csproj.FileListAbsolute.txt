@@ -255,3 +255,6 @@ D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerU
 D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.csproj.CoreCompileInputs.cache
 D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.exe
 D:\Veterinaria\Nueva carpeta\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.pdb
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form2_peluqueria.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form4_Turnos_Añadir_Peluqueria.resources
+D:\colegio\ESCUELA\Vete\Veterinaria-San-Cayetano\PlayerUI\obj\Debug\PlayerUI.Form8_consulta.resources

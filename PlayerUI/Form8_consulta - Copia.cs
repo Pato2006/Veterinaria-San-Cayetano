@@ -47,7 +47,7 @@ namespace PlayerUI
                 return;
             }
 
-            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
             string query = "INSERT INTO Consultas (Turno_id, Observacion, Diagnostico, Tratamiento, Peso) " +
                            "VALUES (@Turno_id, @Observacion, @Diagnostico, @Tratamiento, @Peso)";
 

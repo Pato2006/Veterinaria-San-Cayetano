@@ -1,6 +1,6 @@
 ﻿using System;
-using System.Data.SqlClient;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -50,8 +50,6 @@ namespace PlayerUI
             childForm.Show();
         }
 
-
-
         private void button5_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -65,9 +63,12 @@ namespace PlayerUI
 
         private void ObtenerDatos()
         {
-            string connectionString = "Server=DESKTOP-6HQEU93\\SQLEXPRESS01;Database=Veterinaria;Trusted_Connection=True;";
-            string query = "SELECT Pacientes.Nombre, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.Horario, Turnos.ID AS TurnoID " +
-                           "FROM Pacientes INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id";
+            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string query = "SELECT Pacientes.Nombre, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.Horario, Turnos.ID AS TurnoID, " +
+                           "Consultas.Observacion, Consultas.Diagnostico, Consultas.Tratamiento, Consultas.Peso " +
+                           "FROM Pacientes " +
+                           "INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id " +
+                           "LEFT JOIN Consultas ON Consultas.Turno_ID = Turnos.ID";
 
             if (!string.IsNullOrEmpty(variable))
             {
@@ -138,9 +139,12 @@ namespace PlayerUI
 
             dataGridView1.Columns.Add("Nombre", "Nombre");
             dataGridView1.Columns.Add("Animal", "Animal");
-            dataGridView1.Columns.Add("Raza", "Raza");
             dataGridView1.Columns.Add("Fecha", "Fecha");
             dataGridView1.Columns.Add("Horario", "Horario");
+            dataGridView1.Columns.Add("Observacion", "Observación");
+            dataGridView1.Columns.Add("Diagnostico", "Diagnóstico");
+            dataGridView1.Columns.Add("Tratamiento", "Tratamiento");
+            dataGridView1.Columns.Add("Peso", "Peso");
 
             dataGridView1.Columns.Add("TurnoID", "TurnoID");
             dataGridView1.Columns["TurnoID"].Visible = false;
@@ -155,12 +159,15 @@ namespace PlayerUI
             {
                 string nombre = row["Nombre"].ToString();
                 string animal = row["Animal"].ToString();
-                string raza = row["Raza"].ToString();
                 string fecha = Convert.ToDateTime(row["Fecha"]).ToShortDateString();
                 string horario = row["Horario"].ToString();
+                string observacion = row["Observacion"].ToString();
+                string diagnostico = row["Diagnostico"].ToString();
+                string tratamiento = row["Tratamiento"].ToString();
+                string peso = row["Peso"].ToString();
                 int turnoID = Convert.ToInt32(row["TurnoID"]);
 
-                dataGridView1.Rows.Add(nombre, animal, raza, fecha, horario, turnoID);
+                dataGridView1.Rows.Add(nombre, animal, fecha, horario, observacion, diagnostico, tratamiento, peso, turnoID);
             }
 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;

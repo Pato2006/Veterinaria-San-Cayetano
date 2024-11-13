@@ -53,7 +53,7 @@ namespace PlayerUI
                     return;
                 }
 
-                string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
                "Database=Veterinaria;" +
                "Trusted_Connection=True;";
 

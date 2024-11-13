@@ -1,141 +1,145 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\",
+  "WorkspaceRootPath": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|d:\\veterinaria\\nueva carpeta\\veterinaria-san-cayetano\\playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_historias_ejemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_ejemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_historias_detalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_historias_detalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_detalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_historias_detalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_historias_detalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_detalles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_historias_ejemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_ejemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|d:\\colegio\\escuela\\vete\\veterinaria-san-cayetano\\playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form3_pacientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_editar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|d:\\colegio\\escuela\\vete\\veterinaria-san-cayetano\\playerui\\form2_historias_ejemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_ejemplo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos_lista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form4_turnos_a\u00F1adir_peluqueria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form5_a\u00F1adir_paciente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form6_a\u00F1adir_proveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form8_consulta - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form7_a\u00F1adir_producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form8_consulta - copia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form8_consulta - copia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form8_consulta - copia.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_productos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_productos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_productos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form2_historias_detalles.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form2_historias_detalles.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form2_historias_detalles.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\playerui\\form7_a\u00F1adir_producto.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\playerui\\form7_a\u00F1adir_producto.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B265B459-B4B6-44BC-BDB1-B401C58DC48F}|PlayerUI\\PlayerUI.csproj|solutionrelative:playerui\\form7_a\u00F1adir_producto.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -146,64 +150,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Form6_A\u00F1adir_Proveedores.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
-              "RelativeToolTip": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwGwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:33:18.952Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form1.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:39:08.529Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Form7_A\u00F1adir_producto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form7_A\u00F1adir_producto.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form7_A\u00F1adir_producto.cs [Dise\u00F1o]",
+              "Title": "Form2_Historias_Ejemplo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Ejemplo.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Ejemplo.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Ejemplo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_Ejemplo.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:48:31.145Z",
+              "WhenOpened": "2024-11-13T03:31:23.623Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form2_Historias_editar.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_editar.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_editar.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T03:31:10.235Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form1.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
-              "RelativeToolTip": "PlayerUI\\Form1.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAlwGgAAAAtAAAAAAAAAA==",
+              "Title": "Form2_Historias_Detalles.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Detalles.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_Detalles.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:39:09.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-13T03:29:38.6Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form2_Historias_Detalles.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Detalles.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_Detalles.cs",
+              "ViewState": "AQIAAJYAAAAAAAAAAAAtwKgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T03:29:52.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form2_Productos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2_Productos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T03:31:24.412Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T03:29:44.567Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2_Productos_Lista.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos_Lista.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2_Productos_Lista.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:31:59.427Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Form3_pacientes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form3_pacientes.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs [Dise\u00F1o]",
               "RelativeToolTip": "PlayerUI\\Form3_pacientes.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T03:32:02.833Z",
@@ -211,11 +263,71 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
+              "Title": "Form4_Turnos_A\u00F1adir.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:48:20.767Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form4_Turnos_A\u00F1adir_Peluqueria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T03:32:45.162Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Form5_A\u00F1adir_Paciente.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:22:28.023Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Form6_A\u00F1adir_Proveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:28:13.512Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Form7_A\u00F1adir_producto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form7_A\u00F1adir_producto.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form7_A\u00F1adir_producto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:48:31.145Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Form8_consulta - Copia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form8_consulta - Copia.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs [Dise\u00F1o]",
               "RelativeToolTip": "PlayerUI\\Form8_consulta - Copia.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T04:13:38.95Z",
@@ -223,119 +335,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form8_consulta - Copia.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form8_consulta - Copia.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs",
-              "RelativeToolTip": "PlayerUI\\Form8_consulta - Copia.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAAD4v3gAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T04:13:40.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Form7_A\u00F1adir_producto.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form7_A\u00F1adir_producto.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs",
-              "RelativeToolTip": "PlayerUI\\Form7_A\u00F1adir_producto.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAIwKAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:48:32.263Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Form6_A\u00F1adir_Proveedores.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:28:13.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Form5_A\u00F1adir_Paciente.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:22:28.023Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form5_A\u00F1adir_Paciente.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
-              "RelativeToolTip": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAIwHIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:28:33.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Form4_Turnos_A\u00F1adir_Peluqueria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:32:45.162Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAIwLEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T01:55:43.912Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Form4_Turnos_A\u00F1adir.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:48:20.767Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "Form4_Turnos_A\u00F1adir.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
-              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAIwKwAAAAAAAAAAAAAAA==",
+              "Title": "Form2_peluqueria.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_peluqueria.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form2_peluqueria.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:48:21.844Z"
+              "WhenOpened": "2024-11-13T02:48:11.272Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
               "Title": "Form3_pacientes.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form3_pacientes.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form3_pacientes.cs",
               "RelativeToolTip": "PlayerUI\\Form3_pacientes.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAIwK0AAAANAAAAAAAAAA==",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAYwEsAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T03:32:06.907Z",
               "EditorCaption": ""
@@ -343,210 +361,240 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "Form2_Productos_Lista.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos_Lista.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2_Productos_Lista.cs [Dise\u00F1o]",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form1.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
+              "RelativeToolTip": "PlayerUI\\Form1.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAiwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:31:59.427Z"
+              "WhenOpened": "2024-11-13T03:39:09.881Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
-              "Title": "Form2_Productos_Lista.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos_Lista.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_Productos_Lista.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAIwAUBAAAAAAAAAAAAAA==",
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form1.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "PlayerUI\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:46:40.439Z"
+              "WhenOpened": "2024-11-13T03:39:08.529Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Form2_Productos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2_Productos.cs [Dise\u00F1o]",
+              "Title": "Form2.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
+              "RelativeToolTip": "PlayerUI\\Form2.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAuwFUAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:31:24.412Z"
+              "WhenOpened": "2024-11-13T03:30:49.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 19,
-              "Title": "Form2_Productos.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_Productos.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAwwGwAAAAAAAAAAAAAAA==",
+              "Title": "Form2_Historias_editar.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_editar.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_editar.cs",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAswD4AAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:31:40.449Z"
+              "WhenOpened": "2024-11-13T03:31:11.537Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Form2_peluqueria.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_peluqueria.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_peluqueria.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAIwLoAAAAAAAAAAAAAAA==",
+              "Title": "Form2_Historias_Ejemplo.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Ejemplo.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Ejemplo.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Ejemplo.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_Ejemplo.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAkwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:48:12.85Z"
+              "WhenOpened": "2024-11-13T14:15:08.112Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Form2_peluqueria.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs",
+              "Title": "Form2_peluqueria.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form2_peluqueria.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2_peluqueria.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_peluqueria.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_peluqueria.cs",
+              "ViewState": "AQIAAKcAAAAAAAAAAAAswFQAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T02:48:11.272Z"
+              "WhenOpened": "2024-11-13T02:48:12.85Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 22,
-              "Title": "Form2_Historias_Ejemplo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Ejemplo.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Ejemplo.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Ejemplo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2_Historias_Ejemplo.cs [Dise\u00F1o]",
+              "Title": "Form2_Productos_Lista.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos_Lista.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos_Lista.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Productos_Lista.cs",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAQwJwAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:31:23.623Z"
+              "WhenOpened": "2024-11-13T02:46:40.439Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 23,
-              "Title": "Form2_Historias_editar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_editar.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2_Historias_editar.cs [Dise\u00F1o]",
+              "Title": "Form2_Productos.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Productos.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAcwBgAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:31:10.235Z"
+              "WhenOpened": "2024-11-13T03:31:40.449Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "Form2_Historias_editar.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_editar.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_editar.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_Historias_editar.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAwwJAAAAABAAAAAAAAAA==",
+              "Title": "Form4_Turnos_A\u00F1adir.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
+              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir.cs",
+              "ViewState": "AQIAAFgAAAAAAAAAAAAIwGgAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:31:11.537Z"
+              "WhenOpened": "2024-11-13T02:48:21.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "Form2_Historias_Detalles.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Detalles.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_Historias_Detalles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "Title": "Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "RelativeToolTip": "PlayerUI\\Form4_Turnos_A\u00F1adir_Peluqueria.cs",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAAwGgAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:29:52.315Z"
+              "WhenOpened": "2024-11-13T01:55:43.912Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Form2_Historias_Detalles.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Detalles.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2_Historias_Detalles.cs [Dise\u00F1o]",
+              "Title": "Form5_A\u00F1adir_Paciente.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
+              "RelativeToolTip": "PlayerUI\\Form5_A\u00F1adir_Paciente.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAkwEgAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:29:38.6Z"
+              "WhenOpened": "2024-11-13T02:28:33.904Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
-              "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs [Dise\u00F1o]",
-              "RelativeToolTip": "PlayerUI\\Form2.cs [Dise\u00F1o]",
+              "Title": "Form6_A\u00F1adir_Proveedores.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
+              "RelativeToolTip": "PlayerUI\\Form6_A\u00F1adir_Proveedores.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAcwDcAAABNAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:29:44.567Z"
+              "WhenOpened": "2024-11-13T03:33:18.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "Form2.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2.cs",
-              "RelativeToolTip": "PlayerUI\\Form2.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAIwLsAAAAAAAAAAAAAAA==",
+              "Title": "Form8_consulta - Copia.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form8_consulta - Copia.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.cs",
+              "RelativeToolTip": "PlayerUI\\Form8_consulta - Copia.cs",
+              "ViewState": "AQIAAHQAAAAAAAAAAAAswDEAAABJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:30:49.331Z"
+              "WhenOpened": "2024-11-13T04:13:40.55Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "Form7_A\u00F1adir_producto.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form7_A\u00F1adir_producto.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.cs",
+              "RelativeToolTip": "PlayerUI\\Form7_A\u00F1adir_producto.cs",
+              "ViewState": "AQIAAIYAAAAAAAAAAAAuwFoAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:48:32.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "Form1.designer.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.designer.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.designer.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form1.designer.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.designer.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form1.designer.cs",
               "RelativeToolTip": "PlayerUI\\Form1.designer.cs",
-              "ViewState": "AgIAAJIAAAAAAAAAAAD4v6AAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T06:38:14.84Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Form8_consulta - Copia.designer.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.designer.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form8_consulta - Copia.designer.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.designer.cs",
-              "RelativeToolTip": "PlayerUI\\Form8_consulta - Copia.designer.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAawEgAAABuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T04:14:30.51Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 31,
-              "Title": "Form2_Productos.designer.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.designer.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos.designer.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.designer.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_Productos.designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Title": "Form8_consulta - Copia.designer.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.designer.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form8_consulta - Copia.designer.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form8_consulta - Copia.designer.cs",
+              "RelativeToolTip": "PlayerUI\\Form8_consulta - Copia.designer.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:52:49.985Z"
+              "WhenOpened": "2024-11-13T04:14:30.51Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
-              "Title": "Form2_Historias_Detalles.designer.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.designer.cs",
-              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Detalles.designer.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.designer.cs",
-              "RelativeToolTip": "PlayerUI\\Form2_Historias_Detalles.designer.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAQwGIAAAAAAAAAAAAAAA==",
+              "Title": "Form2_Productos.designer.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.designer.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Productos.designer.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Productos.designer.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Productos.designer.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-13T03:35:51.068Z"
+              "WhenOpened": "2024-11-13T03:52:49.985Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 33,
+              "Title": "Form2_Historias_Detalles.designer.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.designer.cs",
+              "RelativeDocumentMoniker": "PlayerUI\\Form2_Historias_Detalles.designer.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form2_Historias_Detalles.designer.cs",
+              "RelativeToolTip": "PlayerUI\\Form2_Historias_Detalles.designer.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T03:35:51.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
               "Title": "Form7_A\u00F1adir_producto.designer.cs",
-              "DocumentMoniker": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.designer.cs",
+              "DocumentMoniker": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.designer.cs",
               "RelativeDocumentMoniker": "PlayerUI\\Form7_A\u00F1adir_producto.designer.cs",
-              "ToolTip": "D:\\Veterinaria\\Nueva carpeta\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.designer.cs",
+              "ToolTip": "D:\\colegio\\ESCUELA\\Vete\\Veterinaria-San-Cayetano\\PlayerUI\\Form7_A\u00F1adir_producto.designer.cs",
               "RelativeToolTip": "PlayerUI\\Form7_A\u00F1adir_producto.designer.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAD4v8QAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T02:38:36.322Z",
               "EditorCaption": ""
