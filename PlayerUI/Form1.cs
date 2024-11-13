@@ -94,6 +94,16 @@ namespace PlayerUI
         {
             openChildForm(new Form2_peluqueria(this));
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form2(this));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form3_pacientes(this));
+        }
     }
 }
 
