@@ -6,13 +6,13 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form4_Turnos_Añadir : Form
+    public partial class Form4_Turnos_Añadir_Peluqueria : Form
     {
         private Form activeForm = null;
         private Panel panelChildForm;
         private Form1 Form_;
 
-        public Form4_Turnos_Añadir(Form1 form_)
+        public Form4_Turnos_Añadir_Peluqueria(Form1 form_)
         {
             InitializeComponent();
             InitializeChildFormPanel();
@@ -139,7 +139,7 @@ namespace PlayerUI
             string pacienteNombre = comboBoxPaciente.SelectedItem?.ToString();
             string fecha = textBoxFecha.Text;
             string horario = textBoxHorario.Text;
-            string area = "2";
+            string area = "1";
           
 
             // Verificar que se haya seleccionado un paciente
@@ -220,7 +220,7 @@ namespace PlayerUI
             {
                 MessageBox.Show($"Error: {ex.Message}");
             }
-            Form_.openChildForm(new Form2(Form_));
+            Form_.openChildForm(new Form2_peluqueria(Form_));
         }
 
        
@@ -235,6 +235,11 @@ namespace PlayerUI
 
         private void comboBoxPaciente_SelectedIndexChanged(object sender, EventArgs e)
         {
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

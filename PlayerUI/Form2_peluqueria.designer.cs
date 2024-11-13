@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form2
+    partial class Form2_peluqueria
     {
         /// <summary>
         /// Required designer variable.
@@ -55,11 +55,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(218, 22);
+            this.label1.Location = new System.Drawing.Point(225, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 25);
+            this.label1.Size = new System.Drawing.Size(227, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TURNOS VETERINARIOS";
+            this.label1.Text = "TURNOS PELUQUERIA";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBox1
@@ -155,7 +155,7 @@
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // Form2
+            // Form2_peluqueria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -167,7 +167,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "Form2";
+            this.Name = "Form2_peluqueria";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.turnosBindingSource)).EndInit();

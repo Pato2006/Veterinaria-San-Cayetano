@@ -92,7 +92,9 @@ namespace PlayerUI
 
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                            "Database=Veterinaria;" +
+                            "Trusted_Connection=True;";
             try
             {
                 // Obtener los valores de los campos de texto (editados por el usuario)

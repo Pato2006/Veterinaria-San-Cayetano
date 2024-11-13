@@ -116,9 +116,9 @@ namespace PlayerUI
         private void CargarDatos(int id)
         {
             // Cadena de conexión (ajústala según tu servidor y base de datos)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                                      "Database=Veterinaria;" +
-                                      "Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                "Database=Veterinaria;" +
+                "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los datos del paciente con el ID especificado
             string query = "SELECT ID, Nombre, Animal, Raza, Edad, Telefono FROM Pacientes WHERE ID = @id";
@@ -228,9 +228,9 @@ namespace PlayerUI
         private void EliminarPaciente()
         {
             // Cadena de conexión
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                                      "Database=Veterinaria;" +
-                                      "Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                "Database=Veterinaria;" +
+                "Trusted_Connection=True;";
 
             // La consulta DELETE para eliminar al paciente
             string query = "DELETE FROM Pacientes WHERE ID = @id";

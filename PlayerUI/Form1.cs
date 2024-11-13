@@ -21,8 +21,7 @@ namespace PlayerUI
         private void hideSubMenu()
         {
             panelMediaSubMenu.Visible = false;
-            panelPlaylistSubMenu.Visible = false;
-            panelToolsSubMenu.Visible = false;
+
         }
 
         private void showSubMenu(Panel subMenu)
@@ -80,7 +79,6 @@ namespace PlayerUI
         private void btnPlaylist_Click(object sender, EventArgs e)
         {
             openChildForm(new Form2_Productos_Lista(this));
-            showSubMenu(panelPlaylistSubMenu);
         }
 
         #region PlayListManagemetSubMenu
@@ -119,7 +117,7 @@ namespace PlayerUI
 
         private void btnTools_Click(object sender, EventArgs e)
         {
-            showSubMenu(panelToolsSubMenu);
+
         }
         #region ToolsSubMenu
         private void button13_Click(object sender, EventArgs e)
@@ -233,6 +231,11 @@ namespace PlayerUI
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            openChildForm(new Form2_peluqueria(this));
         }
     }
 }

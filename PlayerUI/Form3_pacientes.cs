@@ -8,7 +8,7 @@ namespace PlayerUI
 {
     public partial class Form3_pacientes : Form
     {
-        private Form activeForm = null;
+        
         private Panel panelChildForm;
         private Form1 Form_;
 
@@ -67,7 +67,7 @@ namespace PlayerUI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form_.openChildForm(new Form5_Añadir_Paciente());
+            Form_.openChildForm(new Form5_Añadir_Paciente(Form_));
         }
 
         // Evento TextChanged del TextBox1 para asignar el valor a la variable
@@ -79,9 +79,9 @@ namespace PlayerUI
         private void ObtenerTurnos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                "Database=Veterinaria;" +
-                "Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                  "Database=Veterinaria;" +
+                  "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los turnos
             string query = "SELECT ID, Animal, Raza, Nombre, Edad, Telefono FROM Pacientes";

@@ -10,12 +10,14 @@ namespace PlayerUI
     {
         private Form activeForm = null;
         private Panel panelChildForm;
+        private Form1 Form_;
 
-        public Form5_Añadir_Paciente()
+        public Form5_Añadir_Paciente(Form1 form)
         {
             InitializeComponent();  
             InitializeChildFormPanel();
             hideSubMenu();
+            Form_= form;
         }
 
         private void hideSubMenu()
@@ -56,57 +58,7 @@ namespace PlayerUI
             childForm.Show();
         }
 
-        private void buttonGuardar_Click(object sender, EventArgs e)
-        {
-            // Variables para capturar los valores de los TextBox
-            string animal = textBoxAnimal.Text;
-            string nombre = textBoxNombre.Text;
-            string raza = textBoxRaza.Text;
-            string edad = textBoxEdad.Text;
-            string telefono = textBoxTelefono.Text;
-
-            // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
-
-            // Consulta SQL para insertar un nuevo turno
-            string query = "INSERT INTO Pacientes (Animal, Raza, Nombre, Edad, Telefono) VALUES (@Animal, @Raza, @Nombre, @Edad, @Telefono)";
-
-            try
-            {
-                using (SqlConnection con = new SqlConnection(connectionString))
-                {
-                    con.Open();
-
-                    using (SqlCommand cmd = new SqlCommand(query, con))
-                    {
-                        // Agregar parámetros para prevenir inyecciones SQL
-                        cmd.Parameters.AddWithValue("@Animal", animal);
-                        cmd.Parameters.AddWithValue("@Raza", raza);
-                        cmd.Parameters.AddWithValue("@Nombre", nombre);
-                        cmd.Parameters.AddWithValue("@Edad", edad);
-                        cmd.Parameters.AddWithValue("@Telefono", telefono);
-
-                        // Ejecutar la consulta
-                        int result = cmd.ExecuteNonQuery();
-
-                        // Verificar si el registro fue insertado con éxito
-                        if (result > 0)
-                        {
-                            MessageBox.Show("Paciente añadido exitosamente.");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Error al añadir el Paciente.");
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Error: {ex.Message}");
-            }
-        }
-
+        
         private void Form4_Turnos_Añadir_Load(object sender, EventArgs e)
         {
         }
@@ -151,7 +103,9 @@ namespace PlayerUI
             string telefono = textBoxTelefono.Text;
 
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                "Database=Veterinaria;" +
+                "Trusted_Connection=True;";
 
             // Consulta SQL para insertar un nuevo turno
             string query = "INSERT INTO Pacientes (Animal, Raza, Nombre, Edad, Telefono) VALUES (@Animal, @Raza, @Nombre, @Edad, @Telefono)";
@@ -190,6 +144,7 @@ namespace PlayerUI
             {
                 MessageBox.Show($"Error: {ex.Message}");
             }
+            Form_.openChildForm(new Form3_pacientes(Form_));
         }
 
     }

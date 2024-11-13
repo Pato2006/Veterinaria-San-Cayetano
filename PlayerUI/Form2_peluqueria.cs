@@ -6,7 +6,7 @@ using System.Drawing;
 
 namespace PlayerUI
 {
-    public partial class Form2 : Form
+    public partial class Form2_peluqueria : Form
     {
         private Form activeForm = null;
         private Panel panelChildForm;
@@ -15,7 +15,7 @@ namespace PlayerUI
         // Definir la variable para almacenar el valor del TextBox
         private string variable = string.Empty;
 
-        public Form2(Form1 form_)
+        public Form2_peluqueria(Form1 form_)
         {
             InitializeComponent();
             InitializeChildFormPanel();
@@ -67,7 +67,7 @@ namespace PlayerUI
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            Form_.openChildForm(new Form4_Turnos_Añadir(Form_));
+            Form_.openChildForm(new Form4_Turnos_Añadir_Peluqueria(Form_));
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -100,7 +100,7 @@ namespace PlayerUI
             string query = "SELECT Turnos.ID AS TurnoID, Pacientes.Nombre, Turnos.Horario, Pacientes.Animal, Pacientes.Raza, Turnos.Fecha, Turnos.ID AS TurnoID, Pacientes.ID AS PacienteID " +
                            "FROM Pacientes " +
                            "INNER JOIN Turnos ON Pacientes.ID = Turnos.Paciente_id" +
-                           " WHERE Turnos.Area_id = 2";
+                           " WHERE Turnos.Area_id = 1";
 
             // Verificar si la variable contiene algo
             if (!string.IsNullOrEmpty(variable))

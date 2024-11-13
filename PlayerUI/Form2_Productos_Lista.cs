@@ -16,11 +16,11 @@ namespace PlayerUI
         private Panel panelChildForm;
         private Form1 Form_; // Referencia a Form1
 
-        public Form2_Productos_Lista(Form1 form_)
+        public Form2_Productos_Lista(Form1 form)
         {
 
             InitializeComponent();
-            Form_ = form_;
+            Form_ = form;
             ObtenerProductos(); // Llama a un método para obtener y mostrar productos (puedes personalizarlo)
         }
 
@@ -59,9 +59,9 @@ namespace PlayerUI
         private void ObtenerProductos()
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                                      "Database=Veterinaria;" +
-                                      "Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                "Database=Veterinaria;" +
+                "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los productos
             string query = "SELECT Productos.ID, Productos.nombre, Productos.precio_unitario, Productos.stock, " +
@@ -200,12 +200,12 @@ namespace PlayerUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form_.openChildForm(new Form7_Añadir_producto());
+            Form_.openChildForm(new Form7_Añadir_producto(Form_));
         }
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-            Form_.openChildForm(new Form6_Añadir_Proveedores());
+            Form_.openChildForm(new Form6_Añadir_Proveedores(Form_));
         }
 
         private void Buscar_Click(object sender, EventArgs e)
@@ -217,9 +217,9 @@ namespace PlayerUI
         private void ObtenerProductos(string variable)
         {
             // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                                      "Database=Veterinaria;" +
-                                      "Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                 "Database=Veterinaria;" +
+                 "Trusted_Connection=True;";
 
             // Consulta SQL para obtener los productos
             string query = @"
@@ -320,6 +320,16 @@ namespace PlayerUI
                 // Manejo de errores
                 MessageBox.Show($"Error: {ex.Message}");
             }
+        }
+
+        private void Form2_Productos_Lista_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

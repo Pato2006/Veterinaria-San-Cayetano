@@ -121,6 +121,7 @@
             this.Controls.Add(this.button5);
             this.Name = "Form2_Productos";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);

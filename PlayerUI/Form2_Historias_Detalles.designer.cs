@@ -176,7 +176,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Name = "Form2_Historias_Detalles";
-            this.Text = "Form2";
+            this.Text = "7";
             this.Load += new System.EventHandler(this.Form2_Historias_Detalles_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

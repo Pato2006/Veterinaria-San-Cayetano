@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form4_Turnos_Añadir
+    partial class Form4_Turnos_Añadir_Peluqueria
     {
         /// <summary>
         /// Required designer variable.
@@ -50,11 +50,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(222, 24);
+            this.label1.Location = new System.Drawing.Point(228, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(252, 25);
+            this.label1.Size = new System.Drawing.Size(251, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Añadir Turno de Veterinaria";
+            this.label1.Text = "Añadir Turno de Peluqueria";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
             // 
@@ -156,7 +157,7 @@
             this.comboBoxPaciente.TabIndex = 51;
             this.comboBoxPaciente.SelectedIndexChanged += new System.EventHandler(this.comboBoxPaciente_SelectedIndexChanged);
             // 
-            // Form4_Turnos_Añadir
+            // Form4_Turnos_Añadir_Peluqueria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -172,7 +173,7 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
-            this.Name = "Form4_Turnos_Añadir";
+            this.Name = "Form4_Turnos_Añadir_Peluqueria";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Form4_Turnos_Añadir_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

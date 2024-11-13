@@ -23,9 +23,9 @@ namespace PlayerUI
         private void BuscarProd(int idprod)
         {
             // Definir la cadena de conexión
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;" +
-                                      "Database=Veterinaria;" +
-                                      "Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                 "Database=Veterinaria;" +
+                 "Trusted_Connection=True;";
 
             // Crear la consulta SQL
             string query = "SELECT Productos.nombre, Productos.precio_unitario, Productos.stock, " +
@@ -135,6 +135,11 @@ namespace PlayerUI
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_Productos_Load(object sender, EventArgs e)
         {
 
         }

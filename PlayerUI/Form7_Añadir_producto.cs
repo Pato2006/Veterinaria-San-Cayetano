@@ -12,12 +12,14 @@ namespace PlayerUI
         private Panel panelChildForm;
         private Form1 Form_;
 
-        public Form7_Añadir_producto()
+        public Form7_Añadir_producto(Form1 form)
         {
-            InitializeComponent();  
+            InitializeComponent();
             InitializeChildFormPanel();
             hideSubMenu();
+            Form_ = form;
         }
+
         private void hideSubMenu()
         {
         }
@@ -56,8 +58,45 @@ namespace PlayerUI
             childForm.Show();
         }
 
-        private void Form4_Turnos_Añadir_Load(object sender, EventArgs e)
+        private void Form7_Añadir_producto_Load(object sender, EventArgs e)
         {
+            // Llamar a la función para cargar los proveedores en el ComboBox
+            LoadProveedores();
+        }
+
+        // Método para cargar los proveedores en el ComboBox
+        private void LoadProveedores()
+        {
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                                      "Database=Veterinaria;" +
+                                      "Trusted_Connection=True;";
+            string query = "SELECT Nombre FROM Proveedores"; // Query para obtener los nombres de los proveedores
+
+            try
+            {
+                using (SqlConnection con = new SqlConnection(connectionString))
+                {
+                    con.Open();
+
+                    // Ejecutar la consulta
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            comboBox1.Items.Clear(); // Limpiar el ComboBox antes de cargar nuevos valores
+                            while (reader.Read())
+                            {
+                                // Agregar cada nombre de proveedor al ComboBox
+                                comboBox1.Items.Add(reader["Nombre"].ToString());
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error al cargar proveedores: {ex.Message}");
+            }
         }
 
         private void textBoxHorario_TextChanged(object sender, EventArgs e)
@@ -82,7 +121,6 @@ namespace PlayerUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -90,17 +128,19 @@ namespace PlayerUI
             string nombre = textBoxNombre.Text;
             string precio = textBox2.Text;
             int stock = int.Parse(textBoxStock.Text);
-            string proveedor = textBox1.Text;  // Ahora está declarado y asignado correctamente
+            string proveedor = comboBox1.SelectedItem?.ToString();  // Obtener el proveedor seleccionado del ComboBox
 
-            // Verificar que el nombre no esté vacío
-            if (string.IsNullOrEmpty(nombre))
+            // Verificar que el proveedor esté seleccionado
+            if (string.IsNullOrEmpty(proveedor))
             {
-                MessageBox.Show("Por favor, ingrese el nombre del proveedor.");
+                MessageBox.Show("Por favor, seleccione un proveedor.");
                 return;
             }
 
             // Cadena de conexión
-            string connectionString = "Server=DESKTOP-747DT10\\SQLEXPRESS;Database=Veterinaria;Trusted_Connection=True;";
+            string connectionString = "Server=DESKTOP-4QE2QT2;" +
+                                      "Database=Veterinaria;" +
+                                      "Trusted_Connection=True;";
 
             // Primero obtenemos el ID del proveedor usando su nombre
             int proveedorId;
@@ -159,26 +199,27 @@ namespace PlayerUI
             {
                 MessageBox.Show($"Error: {ex.Message}");
             }
+            Form_.openChildForm(new Form2_Productos_Lista(Form_));
         }
 
         private void textBoxStock_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
-

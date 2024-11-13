@@ -17,7 +17,7 @@ namespace PlayerUI
             InitializeComponent();  
             InitializeChildFormPanel();
             hideSubMenu();
-            Form_ = form;
+            Form_=form
         }
 
         private void hideSubMenu()
@@ -104,8 +104,8 @@ namespace PlayerUI
 
                 // Cadena de conexión (ajusta según tu servidor, base de datos y autenticación)
                 string connectionString = "Server=DESKTOP-4QE2QT2;" +
-               "Database=Veterinaria;" +
-               "Trusted_Connection=True;";
+                 "Database=Veterinaria;" +
+                 "Trusted_Connection=True;";
 
                 // Consulta SQL para insertar un nuevo proveedor
                 string query = "INSERT INTO Proveedores (Nombre, Telefono) VALUES (@Nombre, @Telefono)";
